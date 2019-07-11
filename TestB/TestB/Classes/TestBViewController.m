@@ -18,9 +18,24 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor yellowColor];
+    self.title=self.str;
     [BasisTool toolMethods:@"B"];
     [RequestTool requestWithText:@"B"];
+    
+    UIButton *btn_Details= [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn_Details setTitle:@"TestB组件详情" forState:UIControlStateNormal];
+    [btn_Details setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    btn_Details.backgroundColor = [UIColor redColor];
+    btn_Details.frame = CGRectMake(100, 300, 200, 50);
+    [btn_Details addTarget:self action:@selector(btn_Details_Action) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn_Details];
 }
+- (void)btn_Details_Action{
+    TestBDetailsViewController *detailsVC=[[TestBDetailsViewController alloc]init];
+    detailsVC.str=@"我从TestB首页来的"
+    [self.navigationController pushViewController:detailsVC animated:YES];
+}
+/*
 
 /*
 #pragma mark - Navigation

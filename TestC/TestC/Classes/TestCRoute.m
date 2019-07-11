@@ -13,8 +13,9 @@
 + (void)load {
     [MGJRouter registerURLPattern:URLWITHTestC toHandler:^(NSDictionary *routerParameters) {
         UINavigationController *navigationVC = routerParameters[MGJRouterParameterUserInfo][KEYWITHNavigation];
+        NSString *str = routerParameters[MGJRouterParameterUserInfo][@"str"];
         TestCViewController *testCVC = [[TestCViewController alloc] init];
-        testCVC.str=@"";
+        testCVC.str=str;
         testCVC.TestCCompleteHandler = ^(NSString * _Nonnull text) {
             void (^completion)() = routerParameters[MGJRouterParameterCompletion];
             if (completion) {

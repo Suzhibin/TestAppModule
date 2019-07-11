@@ -33,6 +33,7 @@ a.resource_bundles = {
 }
 a.prefix_header_file = 'TestA/TestA/TestA.pch'
 a.dependency 'TestAppModule/TestBasis'
+
 a.ios.framework  = 'UIKit'
 end
 

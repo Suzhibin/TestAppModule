@@ -4,10 +4,10 @@ s.name         = "TestAppModule"
 s.version      = "1.0.0"
 s.summary      = "A short description of TestAppModule"
 s.description  = "Gray's TestAppModule demo"
-s.homepage     = "https://gitee.com/AndiSuzhibin/TestAppModule"
+s.homepage     = "https://github.com/Suzhibin/TestAppModule"
 # s.license      = { :type => 'MIT', :file => 'LICENSE' }
 s.author       = { 'suzhibin' => 'szb2323@163.com' }
-s.source       = { :git => 'https://gitee.com/AndiSuzhibin/TestAppModule.git', :tag => s.version.to_s }
+s.source       = { :git => 'https://github.com/Suzhibin/TestAppModule.git', :tag => s.version.to_s }
 s.ios.deployment_target = '9.0'
 
 #基础组件

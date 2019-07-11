@@ -1,0 +1,15 @@
+//
+//  TestA.pch
+//  TestA
+//
+//  Created by Suzhibin on 2019/7/10.
+//  Copyright © 2019 Suzhibin. All rights reserved.
+//
+
+#ifndef TestA_pch
+#define TestA_pch
+#import "TestBasisHeader.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* TestA_pch */

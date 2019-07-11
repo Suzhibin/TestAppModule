@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TestCViewController : UIViewController
+@property (nonatomic, copy)NSString *str;
 @property (nonatomic, copy) void (^TestCCompleteHandler)(NSString *text);
 @end
 

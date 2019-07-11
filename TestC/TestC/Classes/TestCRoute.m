@@ -8,12 +8,19 @@
 
 #import "TestCRoute.h"
 #import "TestCViewController.h"
+#import "TestBasisHeader.h"
 @implementation TestCRoute
 + (void)load {
     [MGJRouter registerURLPattern:URLWITHTestC toHandler:^(NSDictionary *routerParameters) {
         UINavigationController *navigationVC = routerParameters[MGJRouterParameterUserInfo][KEYWITHNavigation];
         TestCViewController *testCVC = [[TestCViewController alloc] init];
-        
+        testCVC.str=@"";
+        testCVC.TestCCompleteHandler = ^(NSString * _Nonnull text) {
+            void (^completion)() = routerParameters[MGJRouterParameterCompletion];
+            if (completion) {
+                completion(text);
+            }
+        };
         [navigationVC pushViewController:testCVC animated:YES];
     }];
 }

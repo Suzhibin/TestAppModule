@@ -30,13 +30,11 @@
     
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [MGJRouter openURL:URLWITHTestB
-          withUserInfo:@{KEYWITHNavigation : self.navigationController,@"testID":@"123456789"}
+    [MGJRouter openURL:URLWITHTestC
+          withUserInfo:@{KEYWITHNavigation : self.navigationController,@"str":@"我从TestA来的"}
             completion:^(id result) {
-                if ([result[@"isDeliver"] isEqualToString:@"true"]) {
-                    NSLog(@"我收到了");
-                }
-                
+                NSString *str=result;
+                self.title=str;
             }];
     //BUNDLE_TESTA_MOUDLE TestA工程 图片路径
     UIImage *image= [UIImage imageNamed:@"1111" inBundle:BUNDLE_TESTA_MOUDLE compatibleWithTraitCollection:nil];

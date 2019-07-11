@@ -9,6 +9,7 @@
 #import "TexsBRoute.h"
 #import "TestBViewController.h"
 #import "TestBDetailsViewController.h"
+#import "TestBasisHeader.h"
 @implementation TexsBRoute
 + (void)load {
     [MGJRouter registerURLPattern:URLWITHTestB toHandler:^(NSDictionary *routerParameters) {

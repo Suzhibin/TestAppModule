@@ -7,9 +7,9 @@
 //
 
 #import "TestAViewController.h"
-#import "TestBasisHeader.h"
+//#import "TestBasisHeader.h" pch引用了
 @interface TestAViewController ()
-
+@property (nonatomic,strong)UIImageView *imageView;
 @end
 
 @implementation TestAViewController
@@ -17,24 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor=[UIColor yellowColor];
-    [BasisTool requestMethods:@"A"];
-    
+    self.view.backgroundColor=[UIColor whiteColor];
+    [BasisTool toolMethods:@"A"];
+    [RequestTool requestWithText:@"A"];
 
-    
-    UIButton *btn_home= [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn_home setTitle:@"跳转到 B 页面" forState:UIControlStateNormal];
-    [btn_home setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    btn_home.backgroundColor = [UIColor grayColor];
-    
-    UIImage *image= [UIImage imageNamed:@"tiger" inBundle:BUNDLE_BUSINESS_MOUDLE compatibleWithTraitCollection:nil];
-    [btn_home setImage:image forState:UIControlStateNormal];
-    btn_home.frame = CGRectMake(100, 300, 200, 50);
-    [btn_home addTarget:self action:@selector(btn_Action) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn_home];
+
+    UIImage *image= [UIImage imageNamed:@"1111" inBundle:BUNDLE_BUSINESS_MOUDLE compatibleWithTraitCollection:nil];
+    UIImageView *imageView=[[UIImageView alloc]initWithFrame:CGRectMake(50, 100, self.view.frame.size.width-100, 200)];
+    imageView.image=image;
+    [self.view addSubview:imageView];
+    self.imageView=imageView;
     
 }
-- (void)btn_Action{
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [MGJRouter openURL:URLWITHTestB
           withUserInfo:@{KEYWITHNavigation : self.navigationController,@"testID":@"123456789"}
             completion:^(id result) {
@@ -43,7 +38,11 @@
                 }
                 
             }];
+    //BUNDLE_TESTA_MOUDLE TestA工程 图片路径
+    UIImage *image= [UIImage imageNamed:@"1111" inBundle:BUNDLE_TESTA_MOUDLE compatibleWithTraitCollection:nil];
+    self.imageView.image=image;
 }
+
 /*
 #pragma mark - Navigation
 

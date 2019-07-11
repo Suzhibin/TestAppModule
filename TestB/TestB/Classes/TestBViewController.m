@@ -7,7 +7,7 @@
 //
 
 #import "TestBViewController.h"
-
+#import "TestBasisHeader.h"
 @interface TestBViewController ()
 
 @end
@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor=[UIColor yellowColor];
+    [BasisTool toolMethods:@"B"];
+    [RequestTool requestWithText:@"B"];
 }
 
 /*

@@ -7,16 +7,25 @@
 //
 
 #import "TestCViewController.h"
-
+#import "TestBasisHeader.h"
 @interface TestCViewController ()
 
 @end
 
 @implementation TestCViewController
-
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    if (self.TestCCompleteHandler) {
+        self.TestCCompleteHandler(@"TestC控制能器");
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor=[UIColor blueColor];
+    [BasisTool toolMethods:@"B"];
+    [RequestTool requestWithText:@"B"];
+   
 }
 
 /*

@@ -13,6 +13,7 @@
     [MGJRouter registerURLPattern:URLWITHTestC toHandler:^(NSDictionary *routerParameters) {
         UINavigationController *navigationVC = routerParameters[MGJRouterParameterUserInfo][KEYWITHNavigation];
         TestCViewController *testCVC = [[TestCViewController alloc] init];
+        
         [navigationVC pushViewController:testCVC animated:YES];
     }];
 }

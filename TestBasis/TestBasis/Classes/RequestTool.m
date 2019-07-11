@@ -9,7 +9,7 @@
 #import "RequestTool.h"
 
 @implementation RequestTool
-+(void)requestMethods:(NSString *)text{
++(void)requestWithText:(NSString *)text{
     NSLog(@"%@ 组件 调用了请求方法",text);
 }
 @end

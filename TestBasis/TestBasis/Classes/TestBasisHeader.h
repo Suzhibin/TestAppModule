@@ -11,17 +11,23 @@
 
 #import "BasisTool.h"
 #import "RequestTool.h"
-#import "MGJRouter.h"
 #import "NSBundle+TextBundleName.h"
 
+#import <MGJRouter.h>
+
 /** 组件 bundle */
-#define BUNDLE_BUSINESS_MOUDLE [NSBundle BundleWithPath:@"/TestBasis.bundle" withClass:[self class]]
+#define BUNDLE_BUSINESS_MOUDLE [NSBundle BundleWithPath:@"/TestBasis.bundle" withClass:[self class]]//基础组件路径
 
+#define BUNDLE_TESTA_MOUDLE [NSBundle BundleWithPath:@"/TestA.bundle" withClass:[self class]]//TestA组件路径
 
-/** 组件跳转key */
+#define BUNDLE_TESTB_MOUDLE [NSBundle BundleWithPath:@"/TestB.bundle" withClass:[self class]]//TestB组件路径
+
+#define BUNDLE_TESTC_MOUDLE [NSBundle BundleWithPath:@"/TestC.bundle" withClass:[self class]]//TestC组件路径
+
+/** 组件跳转URL */
 #define URLWITHTestA @"TEST://TestAModule/PushVC"
 #define URLWITHTestB @"TEST://TestBModule/PushVC"
-#define URLWITHTestC @"TEST://TestBasisModule/PushVC"
+#define URLWITHTestC @"TEST://TestCModule/PushVC"
 
 #define KEYWITHNavigation @"navigationVC"
 #endif /* TestBasisHeader_h */

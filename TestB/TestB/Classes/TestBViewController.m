@@ -34,6 +34,7 @@
 - (void)btn_Details_Action{
     TestBDetailsViewController *detailsVC=[[TestBDetailsViewController alloc]init];
     detailsVC.str=@"我从TestB首页来的";
+    detailsVC.hidesBottomBarWhenPushed=YES;
     [self.navigationController pushViewController:detailsVC animated:YES];
 }
 /*

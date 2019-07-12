@@ -20,10 +20,12 @@
             
             TestBDetailsViewController *testBDetailsVC = [[TestBDetailsViewController alloc] init];
             testBDetailsVC.str=str;
+            testBDetailsVC.hidesBottomBarWhenPushed=YES;
             [navigationVC pushViewController:testBDetailsVC animated:YES];
             return;
         }
         TestBViewController *testBVC = [[TestBViewController alloc] init];
+        testBVC.hidesBottomBarWhenPushed=YES;
         [navigationVC pushViewController:testBVC animated:YES];
     }];
 }

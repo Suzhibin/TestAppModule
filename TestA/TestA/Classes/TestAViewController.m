@@ -27,7 +27,7 @@
     imageView.image=image;
     [self.view addSubview:imageView];
     self.imageView=imageView;
-    
+   
     UITableView *table=[[UITableView alloc]initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, self.view.frame.size.height-300) style:UITableViewStylePlain];
     table.delegate=self;
     table.dataSource=self;

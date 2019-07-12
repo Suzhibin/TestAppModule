@@ -22,6 +22,7 @@
                 completion(text);
             }
         };
+        testCVC.hidesBottomBarWhenPushed=YES;
         [navigationVC pushViewController:testCVC animated:YES];
     }];
 }

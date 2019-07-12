@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006CE33C8C3B852FC239CD5BD1DB546C /* BasisTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 580C2DC9F89F62CC6766B6F461B5FF91 /* BasisTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		08757C47CA462AB5D7F0F364E571F517 /* NSBundle+TextBundleName.h in Headers */ = {isa = PBXBuildFile; fileRef = A684EAFD71E0B0121E6FF1BD312649E7 /* NSBundle+TextBundleName.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B714D0A675A028185AE8C8F3879F11D /* TestAppModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BBB52562A2E17FC314D238BD5D21D9 /* TestAppModule-dummy.m */; };
+		1C377FA5DFDF1C5EF1FCD9994187C6D9 /* RequestTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 94DF67D240196C5518684C07D628B1FA /* RequestTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		219343693ECD38A48B0DC8FEDE65375E /* MGJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C180C30A246A6B1CFB57A60AD268503 /* MGJRouter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2221A36955062F64AD5C5452E2EF86C5 /* MGJRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = CB044350DF428C01713EFB66EAA5B250 /* MGJRouter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		23B29426AF9F4690597263978C05E6B6 /* BasisTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7009CE9D580100158905802CCB22B65A /* BasisTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		266AC8D6A63C1CB3B9F1D4723FACC24B /* Pods-TestBasis-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC30848B51445CDBAFCC1F86CA3BE337 /* Pods-TestBasis-dummy.m */; };
-		2F4EA74B8CA1893B92D2D2E154BD4703 /* NSBundle+TextBundleName.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BEA02A6ED6F3DA2D859FB6579A3256E /* NSBundle+TextBundleName.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3DE781EC695788F72E3D336A0915FB71 /* TestAppModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7191A3F34A5851273ED2AE7B23AA5829 /* TestAppModule-dummy.m */; };
-		8BA620AD38A9AAA4BDF36D3899DCF37E /* TestBasisHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B61A98CE46AA032D90545572C05388E2 /* TestBasisHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		272C8652D81EE86153475C68DE9498BA /* BasisTool.h in Headers */ = {isa = PBXBuildFile; fileRef = C45A21E44F9C58DBDE196F86231B45A6 /* BasisTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8DFE46F6555D623C528714901AF43235 /* Pods-TestC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210FFD93ECC1624E39AB5A7BC3F8B11 /* Pods-TestC-dummy.m */; };
-		8E7BB4DD9D63ED9817A1C4794F5C8209 /* RequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E295BC3B37724782338FD76F1CE504 /* RequestTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		95369B29CEAD47C0B7BAFDEF49FE4180 /* NSBundle+TextBundleName.m in Sources */ = {isa = PBXBuildFile; fileRef = 618B89E40A65F69D43F05B144215D83D /* NSBundle+TextBundleName.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A0DC9CF06A31A6AE7ABEA3D516CB787C /* Pods-TestA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D10549C66749E978BC9F0F7C175A3315 /* Pods-TestA-dummy.m */; };
-		ABB123770C7EEE4C4580B75A31FA2DED /* NSBundle+TextBundleName.m in Sources */ = {isa = PBXBuildFile; fileRef = CC04CC6225D5B6DF2C0AC53DF5713524 /* NSBundle+TextBundleName.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D5D1DCBFE6EF53E01D5986E5996195B7 /* BasisTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6429614459340D7BAD2BDE9C4E160E /* BasisTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E78D3445D5B8C382204F599F22309D3E /* TestBasis.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2997FDE6DE357D5941334E9C4021414 /* TestBasis.xcassets */; };
+		D0D630DEB92FBFE587DECA404764C25A /* TestBasisHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = C9844F16189CDD773C32C844D2FA3931 /* TestBasisHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4E4A2E54FE0BE22949B7AA9B2B85743 /* RequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD5E0CA7F91E19CBF5733AA753A96CB /* RequestTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E78D3445D5B8C382204F599F22309D3E /* TestBasis.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60BB5C1E2AB28CF4A2A68AB2AABF67A6 /* TestBasis.xcassets */; };
 		EFBFFD4DB02999FBBF0CBB69CC035806 /* Pods-TestB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46519C15E3D5301A786C0C943EC04DA5 /* Pods-TestB-dummy.m */; };
 		F000024C5F4E79C3734A6E8EBD85C0E3 /* MGJRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9443F31B0B9DFBCB2F958B4F67FC93 /* MGJRouter-dummy.m */; };
-		F0C85C320A9A54AF43AD653AB913B929 /* RequestTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 386B20573E986E92F1AF7C7B12A6D29E /* RequestTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,34 +93,31 @@
 
 /* Begin PBXFileReference section */
 		08EF41D635D7A48C99B5C2C58358CA27 /* Pods-TestBasis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestBasis.release.xcconfig"; sourceTree = "<group>"; };
-		09E295BC3B37724782338FD76F1CE504 /* RequestTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RequestTool.m; path = TestBasis/TestBasis/Classes/RequestTool.m; sourceTree = "<group>"; };
 		0A381F2F33D1949D501A812977A477DB /* libPods-TestA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestA.a"; path = "libPods-TestA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		141327449D1C20FCA73E672BF8D394A3 /* Pods-TestB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestB.release.xcconfig"; sourceTree = "<group>"; };
 		150B3BBEC43BE0AFBEC2409A3057B6FE /* Pods-TestC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestC.debug.xcconfig"; sourceTree = "<group>"; };
 		159F29D8299426B706238317D8124BD4 /* Pods-TestB-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestB-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1990ADE0E9F7C8AF606B360420CBBC4F /* TestAppModule.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TestAppModule.xcconfig; sourceTree = "<group>"; };
 		1FBDC6C159963678D939A0210743EC93 /* Pods-TestA-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestA-acknowledgements.markdown"; sourceTree = "<group>"; };
 		20EE08204E760523E8C79E959609ADC7 /* libTestAppModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTestAppModule.a; path = libTestAppModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2FCB9F27462078EE42255B8E32C04D /* Pods-TestA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestA.release.xcconfig"; sourceTree = "<group>"; };
 		2D36F6AC92AF55E13FFAB2A70A725B87 /* Pods-TestB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestB.debug.xcconfig"; sourceTree = "<group>"; };
 		327D6B92C18B1D7AB91A6C12E5DF1812 /* Pods-TestC-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestC-resources.sh"; sourceTree = "<group>"; };
-		386B20573E986E92F1AF7C7B12A6D29E /* RequestTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RequestTool.h; path = TestBasis/TestBasis/Classes/RequestTool.h; sourceTree = "<group>"; };
 		3DE05B77D8A6987068D093CD04E0EE83 /* Pods-TestC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestC-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41E2E7CCACD53402870E48531208E9A1 /* ResourceBundle-TestBasis-TestAppModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TestBasis-TestAppModule-Info.plist"; sourceTree = "<group>"; };
 		427B5FBAD9A27A38C01C06BA4703FD7F /* libPods-TestB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestB.a"; path = "libPods-TestB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4544EB9B3247D152992847592648D477 /* Pods-TestBasis-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestBasis-acknowledgements.markdown"; sourceTree = "<group>"; };
 		457EE61950A989E5AABB707EB8638B85 /* Pods-TestB-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestB-acknowledgements.plist"; sourceTree = "<group>"; };
 		46519C15E3D5301A786C0C943EC04DA5 /* Pods-TestB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestB-dummy.m"; sourceTree = "<group>"; };
-		500ACE730D589CFE2CDABAD8F9839546 /* README.en.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.en.md; sourceTree = "<group>"; };
-		584570E39F27DA67749D1732E717B280 /* TestAppModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TestAppModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5A6429614459340D7BAD2BDE9C4E160E /* BasisTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BasisTool.m; path = TestBasis/TestBasis/Classes/BasisTool.m; sourceTree = "<group>"; };
+		536E7C8ADF14CF9B0CF47EEC0364CE81 /* README.en.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.en.md; sourceTree = "<group>"; };
+		56BBB52562A2E17FC314D238BD5D21D9 /* TestAppModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TestAppModule-dummy.m"; sourceTree = "<group>"; };
+		580C2DC9F89F62CC6766B6F461B5FF91 /* BasisTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BasisTool.m; sourceTree = "<group>"; };
 		5F367FA09B17733226F1315718C6532C /* libPods-TestBasis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestBasis.a"; path = "libPods-TestBasis.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60BB5C1E2AB28CF4A2A68AB2AABF67A6 /* TestBasis.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = TestBasis.xcassets; path = TestBasis/TestBasis/Classes/TestBasis.xcassets; sourceTree = "<group>"; };
+		618B89E40A65F69D43F05B144215D83D /* NSBundle+TextBundleName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+TextBundleName.m"; path = "TestBasis/TestBasis/Classes/NSBundle+TextBundleName.m"; sourceTree = "<group>"; };
 		61C6C2E7BEC30FAF055C8434EAFBCA91 /* MGJRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGJRouter.xcconfig; sourceTree = "<group>"; };
-		6BEA02A6ED6F3DA2D859FB6579A3256E /* NSBundle+TextBundleName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+TextBundleName.h"; path = "TestBasis/TestBasis/Classes/NSBundle+TextBundleName.h"; sourceTree = "<group>"; };
-		7009CE9D580100158905802CCB22B65A /* BasisTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BasisTool.h; path = TestBasis/TestBasis/Classes/BasisTool.h; sourceTree = "<group>"; };
 		701BED1CC6106ED3EA12F8279AA28713 /* Pods-TestA-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestA-acknowledgements.plist"; sourceTree = "<group>"; };
-		7191A3F34A5851273ED2AE7B23AA5829 /* TestAppModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TestAppModule-dummy.m"; sourceTree = "<group>"; };
 		7210FFD93ECC1624E39AB5A7BC3F8B11 /* Pods-TestC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestC-dummy.m"; sourceTree = "<group>"; };
-		7B04650E41ACDE5557BA8753F0D0AF6F /* TestAppModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TestAppModule-prefix.pch"; sourceTree = "<group>"; };
+		7BBCC31BA475F1C1D6896CD9D251060B /* TestAppModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TestAppModule-prefix.pch"; sourceTree = "<group>"; };
 		7C12049DB117E31B871AEABC6B45C4CB /* Pods-TestBasis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestBasis.debug.xcconfig"; sourceTree = "<group>"; };
 		8049103FB276A315B9B2D63FC9EF937A /* TestBasis.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TestBasis.bundle; path = "TestAppModule-TestBasis.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CCA5AB0C5CE029D86604F53F72032E /* Pods-TestC-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestC-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -128,19 +125,22 @@
 		83D176017684781C39E0B7DEF85DB9D3 /* Pods-TestA-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestA-resources.sh"; sourceTree = "<group>"; };
 		8A9EB49159696D7BDAE4F25D3233E5C9 /* libPods-TestC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestC.a"; path = "libPods-TestC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9443F31B0B9DFBCB2F958B4F67FC93 /* MGJRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGJRouter-dummy.m"; sourceTree = "<group>"; };
+		94DF67D240196C5518684C07D628B1FA /* RequestTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RequestTool.h; sourceTree = "<group>"; };
 		9C180C30A246A6B1CFB57A60AD268503 /* MGJRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGJRouter.m; path = MGJRouter/MGJRouter.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A684EAFD71E0B0121E6FF1BD312649E7 /* NSBundle+TextBundleName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+TextBundleName.h"; path = "TestBasis/TestBasis/Classes/NSBundle+TextBundleName.h"; sourceTree = "<group>"; };
 		AC30848B51445CDBAFCC1F86CA3BE337 /* Pods-TestBasis-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestBasis-dummy.m"; sourceTree = "<group>"; };
-		B2997FDE6DE357D5941334E9C4021414 /* TestBasis.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = TestBasis.xcassets; path = TestBasis/TestBasis/Classes/TestBasis.xcassets; sourceTree = "<group>"; };
-		B61A98CE46AA032D90545572C05388E2 /* TestBasisHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TestBasisHeader.h; path = TestBasis/TestBasis/Classes/TestBasisHeader.h; sourceTree = "<group>"; };
+		C45A21E44F9C58DBDE196F86231B45A6 /* BasisTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BasisTool.h; sourceTree = "<group>"; };
+		C4B2C3A7D220109090199A6EB05AAD64 /* TestAppModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TestAppModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C4E651803B49B216E300FEBDDC6FA1F1 /* MGJRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGJRouter-prefix.pch"; sourceTree = "<group>"; };
+		C9844F16189CDD773C32C844D2FA3931 /* TestBasisHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TestBasisHeader.h; path = TestBasis/TestBasis/Classes/TestBasisHeader.h; sourceTree = "<group>"; };
 		CB044350DF428C01713EFB66EAA5B250 /* MGJRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGJRouter.h; path = MGJRouter/MGJRouter.h; sourceTree = "<group>"; };
-		CC04CC6225D5B6DF2C0AC53DF5713524 /* NSBundle+TextBundleName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+TextBundleName.m"; path = "TestBasis/TestBasis/Classes/NSBundle+TextBundleName.m"; sourceTree = "<group>"; };
 		D10549C66749E978BC9F0F7C175A3315 /* Pods-TestA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestA-dummy.m"; sourceTree = "<group>"; };
-		D5BB9D8C9E2B4D2DAABDF3979BE2B172 /* ResourceBundle-TestBasis-TestAppModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TestBasis-TestAppModule-Info.plist"; sourceTree = "<group>"; };
+		DB85EB6B3AB42B9776E40A1E841304C5 /* TestAppModule.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TestAppModule.xcconfig; sourceTree = "<group>"; };
 		E0F48510B551CA6B4B5DF9B138ACE61D /* Pods-TestB-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestB-resources.sh"; sourceTree = "<group>"; };
 		EB104725F55FAD87803CF21805D2E159 /* libMGJRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMGJRouter.a; path = libMGJRouter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0A48889B1B21E045A6DC604546E13D /* Pods-TestA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestA.debug.xcconfig"; sourceTree = "<group>"; };
+		FDD5E0CA7F91E19CBF5733AA753A96CB /* RequestTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RequestTool.m; sourceTree = "<group>"; };
 		FE224827F9BC917FB332A245020EE1FE /* Pods-TestC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,10 +233,42 @@
 			path = "../Target Support Files/MGJRouter";
 			sourceTree = "<group>";
 		};
+		269A050C91EDC5BE1FC4CF6E96255FD4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				41E2E7CCACD53402870E48531208E9A1 /* ResourceBundle-TestBasis-TestAppModule-Info.plist */,
+				DB85EB6B3AB42B9776E40A1E841304C5 /* TestAppModule.xcconfig */,
+				56BBB52562A2E17FC314D238BD5D21D9 /* TestAppModule-dummy.m */,
+				7BBCC31BA475F1C1D6896CD9D251060B /* TestAppModule-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/TestAppModule";
+			sourceTree = "<group>";
+		};
+		347F810B1EA15CF24A23AA70922614E1 /* TestAppModule */ = {
+			isa = PBXGroup;
+			children = (
+				37315DCE5341CB63826891FB96D45007 /* Pod */,
+				269A050C91EDC5BE1FC4CF6E96255FD4 /* Support Files */,
+				70CF2E736A7E23B68D52FDFFD3299891 /* TestBasis */,
+			);
+			name = TestAppModule;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		37315DCE5341CB63826891FB96D45007 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				536E7C8ADF14CF9B0CF47EEC0364CE81 /* README.en.md */,
+				C4B2C3A7D220109090199A6EB05AAD64 /* TestAppModule.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		39852C8CECFA07C6C8F6FFEB2AFDF8EA /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F707DCDCED13893122D5AE41765DFAB5 /* TestAppModule */,
+				347F810B1EA15CF24A23AA70922614E1 /* TestAppModule */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -247,21 +279,6 @@
 				12DA0FD442B184217D742B49208C53D3 /* MGJRouter */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		54CB4343C0D9E214A8193D431EDF3DF0 /* TestBasis */ = {
-			isa = PBXGroup;
-			children = (
-				7009CE9D580100158905802CCB22B65A /* BasisTool.h */,
-				5A6429614459340D7BAD2BDE9C4E160E /* BasisTool.m */,
-				6BEA02A6ED6F3DA2D859FB6579A3256E /* NSBundle+TextBundleName.h */,
-				CC04CC6225D5B6DF2C0AC53DF5713524 /* NSBundle+TextBundleName.m */,
-				386B20573E986E92F1AF7C7B12A6D29E /* RequestTool.h */,
-				09E295BC3B37724782338FD76F1CE504 /* RequestTool.m */,
-				B61A98CE46AA032D90545572C05388E2 /* TestBasisHeader.h */,
-				9531EF1DBB81E69AEF1874152E39BC37 /* Resources */,
-			);
-			name = TestBasis;
 			sourceTree = "<group>";
 		};
 		5806E9FB1D2C9F35352C1A5D3801485C /* Targets Support Files */ = {
@@ -289,13 +306,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		827CE8D4A116D72F9A8E56CB913BA07D /* Pod */ = {
+		70CF2E736A7E23B68D52FDFFD3299891 /* TestBasis */ = {
 			isa = PBXGroup;
 			children = (
-				500ACE730D589CFE2CDABAD8F9839546 /* README.en.md */,
-				584570E39F27DA67749D1732E717B280 /* TestAppModule.podspec */,
+				A684EAFD71E0B0121E6FF1BD312649E7 /* NSBundle+TextBundleName.h */,
+				618B89E40A65F69D43F05B144215D83D /* NSBundle+TextBundleName.m */,
+				C9844F16189CDD773C32C844D2FA3931 /* TestBasisHeader.h */,
+				9A23F7684476CF7483248C87DCD96B76 /* BasisTool */,
+				CCADD9DDE6B1EC71B0F5D155B66C992E /* RequestTool */,
+				ABE690D3FC89618969B03B969BA5AB6F /* Resources */,
 			);
-			name = Pod;
+			name = TestBasis;
 			sourceTree = "<group>";
 		};
 		84903B31A4B030D87E7A9F819076DF61 /* Pods-TestBasis */ = {
@@ -311,10 +332,20 @@
 			path = "Target Support Files/Pods-TestBasis";
 			sourceTree = "<group>";
 		};
-		9531EF1DBB81E69AEF1874152E39BC37 /* Resources */ = {
+		9A23F7684476CF7483248C87DCD96B76 /* BasisTool */ = {
 			isa = PBXGroup;
 			children = (
-				B2997FDE6DE357D5941334E9C4021414 /* TestBasis.xcassets */,
+				C45A21E44F9C58DBDE196F86231B45A6 /* BasisTool.h */,
+				580C2DC9F89F62CC6766B6F461B5FF91 /* BasisTool.m */,
+			);
+			name = BasisTool;
+			path = TestBasis/TestBasis/Classes/BasisTool;
+			sourceTree = "<group>";
+		};
+		ABE690D3FC89618969B03B969BA5AB6F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60BB5C1E2AB28CF4A2A68AB2AABF67A6 /* TestBasis.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -333,16 +364,14 @@
 			path = "Target Support Files/Pods-TestB";
 			sourceTree = "<group>";
 		};
-		CD5B4B15724B87A572BCABCBCC1058F1 /* Support Files */ = {
+		CCADD9DDE6B1EC71B0F5D155B66C992E /* RequestTool */ = {
 			isa = PBXGroup;
 			children = (
-				D5BB9D8C9E2B4D2DAABDF3979BE2B172 /* ResourceBundle-TestBasis-TestAppModule-Info.plist */,
-				1990ADE0E9F7C8AF606B360420CBBC4F /* TestAppModule.xcconfig */,
-				7191A3F34A5851273ED2AE7B23AA5829 /* TestAppModule-dummy.m */,
-				7B04650E41ACDE5557BA8753F0D0AF6F /* TestAppModule-prefix.pch */,
+				94DF67D240196C5518684C07D628B1FA /* RequestTool.h */,
+				FDD5E0CA7F91E19CBF5733AA753A96CB /* RequestTool.m */,
 			);
-			name = "Support Files";
-			path = "Pods/Target Support Files/TestAppModule";
+			name = RequestTool;
+			path = TestBasis/TestBasis/Classes/RequestTool;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -378,17 +407,6 @@
 			path = "Target Support Files/Pods-TestA";
 			sourceTree = "<group>";
 		};
-		F707DCDCED13893122D5AE41765DFAB5 /* TestAppModule */ = {
-			isa = PBXGroup;
-			children = (
-				827CE8D4A116D72F9A8E56CB913BA07D /* Pod */,
-				CD5B4B15724B87A572BCABCBCC1058F1 /* Support Files */,
-				54CB4343C0D9E214A8193D431EDF3DF0 /* TestBasis */,
-			);
-			name = TestAppModule;
-			path = ..;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -397,17 +415,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2221A36955062F64AD5C5452E2EF86C5 /* MGJRouter.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29EE081119AE4CC39167410028B71600 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				23B29426AF9F4690597263978C05E6B6 /* BasisTool.h in Headers */,
-				2F4EA74B8CA1893B92D2D2E154BD4703 /* NSBundle+TextBundleName.h in Headers */,
-				F0C85C320A9A54AF43AD653AB913B929 /* RequestTool.h in Headers */,
-				8BA620AD38A9AAA4BDF36D3899DCF37E /* TestBasisHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +429,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7125532BBAF16D7613CDB6918AE5AAF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272C8652D81EE86153475C68DE9498BA /* BasisTool.h in Headers */,
+				08757C47CA462AB5D7F0F364E571F517 /* NSBundle+TextBundleName.h in Headers */,
+				1C377FA5DFDF1C5EF1FCD9994187C6D9 /* RequestTool.h in Headers */,
+				D0D630DEB92FBFE587DECA404764C25A /* TestBasisHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,8 +537,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D3D1118AC3F7051601E62B0E0FDB6E5 /* Build configuration list for PBXNativeTarget "TestAppModule" */;
 			buildPhases = (
-				29EE081119AE4CC39167410028B71600 /* Headers */,
-				37BBA08233CE311C7851A15F45457E3E /* Sources */,
+				7125532BBAF16D7613CDB6918AE5AAF5 /* Headers */,
+				66F563CEB68AB07CAB0CC095BEC5396C /* Sources */,
 				26A26214F701A479158AE084E76DB682 /* Frameworks */,
 			);
 			buildRules = (
@@ -630,22 +648,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		37BBA08233CE311C7851A15F45457E3E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5D1DCBFE6EF53E01D5986E5996195B7 /* BasisTool.m in Sources */,
-				ABB123770C7EEE4C4580B75A31FA2DED /* NSBundle+TextBundleName.m in Sources */,
-				8E7BB4DD9D63ED9817A1C4794F5C8209 /* RequestTool.m in Sources */,
-				3DE781EC695788F72E3D336A0915FB71 /* TestAppModule-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		66598F05C13D3402A066D4956EE623DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8DFE46F6555D623C528714901AF43235 /* Pods-TestC-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F563CEB68AB07CAB0CC095BEC5396C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006CE33C8C3B852FC239CD5BD1DB546C /* BasisTool.m in Sources */,
+				95369B29CEAD47C0B7BAFDEF49FE4180 /* NSBundle+TextBundleName.m in Sources */,
+				D4E4A2E54FE0BE22949B7AA9B2B85743 /* RequestTool.m in Sources */,
+				0B714D0A675A028185AE8C8F3879F11D /* TestAppModule-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,7 +817,7 @@
 		};
 		4225F72D6F94DE126DC69F49095416D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1990ADE0E9F7C8AF606B360420CBBC4F /* TestAppModule.xcconfig */;
+			baseConfigurationReference = DB85EB6B3AB42B9776E40A1E841304C5 /* TestAppModule.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TestAppModule";
@@ -1029,7 +1047,7 @@
 		};
 		A77B90D1E6EAB9A52496A482D4CB926D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1990ADE0E9F7C8AF606B360420CBBC4F /* TestAppModule.xcconfig */;
+			baseConfigurationReference = DB85EB6B3AB42B9776E40A1E841304C5 /* TestAppModule.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TestAppModule";
@@ -1066,7 +1084,7 @@
 		};
 		E48FB84EB51D3982F0BBF25BA56D066C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1990ADE0E9F7C8AF606B360420CBBC4F /* TestAppModule.xcconfig */;
+			baseConfigurationReference = DB85EB6B3AB42B9776E40A1E841304C5 /* TestAppModule.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1090,7 +1108,7 @@
 		};
 		E51552DCA897B526C5A3AB64453517BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1990ADE0E9F7C8AF606B360420CBBC4F /* TestAppModule.xcconfig */;
+			baseConfigurationReference = DB85EB6B3AB42B9776E40A1E841304C5 /* TestAppModule.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

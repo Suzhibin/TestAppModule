@@ -46,7 +46,7 @@ b.resource_bundles = {
 'TestB/TestB/Classes/**/*.{storyboard,xcassets,xib,json}'
 ]
 }
-b.prefix_header_file = 'TestB/TestB/Classes/TestB.pch'
+#b.prefix_header_file = 'TestB/TestB/Classes/TestB.pch'
 b.dependency 'TestAppModule/TestBasis'
 b.ios.framework  = 'UIKit'
 end
@@ -59,7 +59,7 @@ c.resource_bundles = {
 'TestC/TestC/Classes/**/*.{storyboard,xcassets,xib,json}'
 ]
 }
-c.prefix_header_file = 'TestC/TestC/Classes/TestC.pch'
+#c.prefix_header_file = 'TestC/TestC/Classes/TestC.pch'
 c.dependency 'TestAppModule/TestBasis'
 c.ios.framework  = 'UIKit'
 end

@@ -8,7 +8,7 @@
 
 #import "TestAViewController.h"
 //#import "TestBasisHeader.h" pch引用了
-@interface TestAViewController ()
+@interface TestAViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UIImageView *imageView;
 @end
 
@@ -18,8 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor whiteColor];
-    [BasisTool toolMethods:@"A"];
-    [RequestTool requestWithText:@"A"];
+    [BasisTool toolMethods:@"TestA"];
+    [RequestTool requestWithText:@"TestA"];
     
     
     UIImage *image= [UIImage imageNamed:@"1111" inBundle:BUNDLE_BUSINESS_MOUDLE compatibleWithTraitCollection:nil];
@@ -65,13 +65,13 @@
     __weak typeof(self) weakSelf = self;
     switch (indexPath.row) {
         case 0:
-            [MGJRouter openURL:URLWITHTestC
+            [MGJRouter openURL:URLWITHTestB
                   withUserInfo:@{KEYWITHNavigation : self.navigationController,@"str":@"我从TestA来的"}
                     completion:nil];
             break;
         case 1:
-            [MGJRouter openURL:URLWITHTestC
-                  withUserInfo:@{KEYWITHNavigation : self.navigationController,@"str":@"我从TestA来的"}
+            [MGJRouter openURL:URLWITHTestB
+                  withUserInfo:@{KEYWITHNavigation : self.navigationController,@"TestBDetailsViewController":@"跳转到确认offer",@"str":@"我从TestA来的"}
                     completion:nil];
             break;
         case 2:

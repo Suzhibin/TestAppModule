@@ -8,6 +8,7 @@
 
 #import "TestBViewController.h"
 #import "TestBasisHeader.h"
+#import "TestBDetailsViewController.h"
 @interface TestBViewController ()
 
 @end
@@ -19,8 +20,8 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor yellowColor];
     self.title=self.str;
-    [BasisTool toolMethods:@"B"];
-    [RequestTool requestWithText:@"B"];
+    [BasisTool toolMethods:@"TestB"];
+    [RequestTool requestWithText:@"TestB"];
     
     UIButton *btn_Details= [UIButton buttonWithType:UIButtonTypeCustom];
     [btn_Details setTitle:@"TestB组件详情" forState:UIControlStateNormal];
@@ -32,7 +33,7 @@
 }
 - (void)btn_Details_Action{
     TestBDetailsViewController *detailsVC=[[TestBDetailsViewController alloc]init];
-    detailsVC.str=@"我从TestB首页来的"
+    detailsVC.str=@"我从TestB首页来的";
     [self.navigationController pushViewController:detailsVC animated:YES];
 }
 /*

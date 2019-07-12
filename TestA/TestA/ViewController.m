@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     UIButton *btn_home= [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn_home setTitle:@"A组件首页" forState:UIControlStateNormal];
+    [btn_home setTitle:@"TestA组件首页" forState:UIControlStateNormal];
     [btn_home setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     btn_home.backgroundColor = [UIColor redColor];
     btn_home.frame = CGRectMake(100, 300, 200, 50);

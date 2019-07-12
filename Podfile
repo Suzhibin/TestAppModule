@@ -1,6 +1,6 @@
 workspace 'TestAppModule.xcworkspace'
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://gitee.com/AndiSuzhibin/TestAppModule.git'
+source 'https://github.com/Suzhibin/TestAppModule.git'
 platform :ios, '9.0'
 inhibit_all_warnings!
 

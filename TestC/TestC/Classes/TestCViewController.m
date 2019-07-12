@@ -16,14 +16,14 @@
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     if (self.TestCCompleteHandler) {
-        self.TestCCompleteHandler(@"TestC控制能器");
+        self.TestCCompleteHandler(@"TestC来TestA旅游");
     }
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor blueColor];
-    self.title=self.str;
+
     [BasisTool toolMethods:@"TestC"];
     [RequestTool requestWithText:@"TestC"];
    

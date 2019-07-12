@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor yellowColor];
-    self.title=self.str;
+
     [BasisTool toolMethods:@"TestB"];
     [RequestTool requestWithText:@"TestB"];
     

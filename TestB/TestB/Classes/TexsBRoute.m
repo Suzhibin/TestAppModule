@@ -14,11 +14,12 @@
 + (void)load {
     [MGJRouter registerURLPattern:URLWITHTestB toHandler:^(NSDictionary *routerParameters) {
         UINavigationController *navigationVC = routerParameters[MGJRouterParameterUserInfo][KEYWITHNavigation];
-      
+        NSString *str=routerParameters[MGJRouterParameterUserInfo][@"str"];
         
         if (routerParameters[MGJRouterParameterUserInfo][@"TestBDetailsViewController"]) {
             
             TestBDetailsViewController *testBDetailsVC = [[TestBDetailsViewController alloc] init];
+            testBDetailsVC.str=str;
             [navigationVC pushViewController:testBDetailsVC animated:YES];
             return;
         }

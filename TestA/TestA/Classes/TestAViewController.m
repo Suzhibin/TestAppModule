@@ -79,7 +79,7 @@
                   withUserInfo:@{KEYWITHNavigation : self.navigationController,@"str":@"我从TestA来的"}
                     completion:^(id result) {
                         NSString *str=result;
-                        weakSelf.title=str;
+                        NSLog(@"%@",str);
                         //BUNDLE_TESTA_MOUDLE TestA工程 图片路径
                         UIImage *image= [UIImage imageNamed:@"tiger" inBundle:BUNDLE_TESTA_MOUDLE compatibleWithTraitCollection:nil];
                         weakSelf.imageView.image=image;

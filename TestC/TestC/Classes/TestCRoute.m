@@ -12,7 +12,7 @@
 @implementation TestCRoute
 + (void)load {
     [MGJRouter registerURLPattern:URLWITHTestC toHandler:^(NSDictionary *routerParameters) {
-        UINavigationController *navigationVC = routerParameters[MGJRouterParameterUserInfo][KEYWITHNavigation];
+        UIViewController *viewController = routerParameters[MGJRouterParameterUserInfo][KEYWITHViewController];
         NSString *str = routerParameters[MGJRouterParameterUserInfo][@"str"];
         TestCViewController *testCVC = [[TestCViewController alloc] init];
         testCVC.str=str;
@@ -22,8 +22,12 @@
                 completion(text);
             }
         };
-        testCVC.hidesBottomBarWhenPushed=YES;
-        [navigationVC pushViewController:testCVC animated:YES];
+       // testCVC.hidesBottomBarWhenPushed=YES;
+        dispatch_async(dispatch_get_main_queue(), ^{
+              [viewController presentViewController:testCVC animated:YES completion:nil];
+        });
+     
+      
     }];
 }
 @end

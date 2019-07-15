@@ -76,7 +76,7 @@
             break;
         case 2:
             [MGJRouter openURL:URLWITHTestC
-                  withUserInfo:@{KEYWITHNavigation : self.navigationController,@"str":@"我从TestA来的"}
+                  withUserInfo:@{KEYWITHViewController: self,@"str":@"我从TestA来的"}
                     completion:^(id result) {
                         NSString *str=result;
                         NSLog(@"%@",str);

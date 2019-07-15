@@ -30,4 +30,5 @@
 #define URLWITHTestC @"TEST://TestCModule/PushVC"
 
 #define KEYWITHNavigation @"navigationVC"
+#define KEYWITHViewController @"ViewController"
 #endif /* TestBasisHeader_h */

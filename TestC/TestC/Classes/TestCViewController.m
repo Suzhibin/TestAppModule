@@ -26,7 +26,17 @@
 
     [BasisTool toolMethods:@"TestC"];
     [RequestTool requestWithText:@"TestC"];
-   
+    
+    UIButton *btn= [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"返回" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor redColor];
+    btn.frame = CGRectMake(100, 300, 200, 50);
+    [btn addTarget:self action:@selector(btn_Action) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+- (void)btn_Action{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

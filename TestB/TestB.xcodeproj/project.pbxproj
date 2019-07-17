@@ -19,6 +19,7 @@
 		9F93906822D5EA5700DAD186 /* TexsBRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93906422D5EA5700DAD186 /* TexsBRoute.m */; };
 		9F93906922D5EA5700DAD186 /* TestBDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93906522D5EA5700DAD186 /* TestBDetailsViewController.m */; };
 		9F93907122D5F21A00DAD186 /* TestB.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F93907022D5F21A00DAD186 /* TestB.xcassets */; };
+		9FACB93F22DEC90D0025F181 /* Target_TestB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB93E22DEC90D0025F181 /* Target_TestB.m */; };
 		E740186AD920A5846570732B /* libPods-TestB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D32E26D6633882599E53125D /* libPods-TestB.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		9F93906522D5EA5700DAD186 /* TestBDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBDetailsViewController.m; sourceTree = "<group>"; };
 		9F93906622D5EA5700DAD186 /* TestBDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBDetailsViewController.h; sourceTree = "<group>"; };
 		9F93907022D5F21A00DAD186 /* TestB.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TestB.xcassets; sourceTree = "<group>"; };
+		9FACB93D22DEC90D0025F181 /* Target_TestB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_TestB.h; sourceTree = "<group>"; };
+		9FACB93E22DEC90D0025F181 /* Target_TestB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_TestB.m; sourceTree = "<group>"; };
 		ACE3F3D1793CF0402989F581 /* Pods-TestB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestB.debug.xcconfig"; path = "Target Support Files/Pods-TestB/Pods-TestB.debug.xcconfig"; sourceTree = "<group>"; };
 		D32E26D6633882599E53125D /* libPods-TestB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -162,6 +165,7 @@
 		9F93905922D5EA1C00DAD186 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9FACB93C22DEC8DD0025F181 /* Target */,
 				9F93906622D5EA5700DAD186 /* TestBDetailsViewController.h */,
 				9F93906522D5EA5700DAD186 /* TestBDetailsViewController.m */,
 				9F93906122D5EA5700DAD186 /* TestBViewController.h */,
@@ -171,6 +175,15 @@
 				9F93907022D5F21A00DAD186 /* TestB.xcassets */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		9FACB93C22DEC8DD0025F181 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				9FACB93D22DEC90D0025F181 /* Target_TestB.h */,
+				9FACB93E22DEC90D0025F181 /* Target_TestB.m */,
+			);
+			path = Target;
 			sourceTree = "<group>";
 		};
 		FFFB1BC0B95E64E042EAF2A4 /* Pods */ = {
@@ -359,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F93906922D5EA5700DAD186 /* TestBDetailsViewController.m in Sources */,
+				9FACB93F22DEC90D0025F181 /* Target_TestB.m in Sources */,
 				9F938FA422D5D5FA00DAD186 /* ViewController.m in Sources */,
 				9F93906722D5EA5700DAD186 /* TestBViewController.m in Sources */,
 				9F93906822D5EA5700DAD186 /* TexsBRoute.m in Sources */,

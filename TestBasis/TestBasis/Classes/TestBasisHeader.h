@@ -13,7 +13,16 @@
 #import "RequestTool.h"
 #import "NSBundle+TextBundleName.h"
 
+
+#import "CTMediator+TestA.h"
+#import "CTMediator+TestB.h"
+#import "CTMediator+TestC.h"
+
+
 #import <MGJRouter.h>
+
+
+
 
 /** 组件 bundle */
 #define BUNDLE_BUSINESS_MOUDLE [NSBundle BundleWithPath:@"/TestBasis.bundle" withClass:[self class]]//基础组件路径

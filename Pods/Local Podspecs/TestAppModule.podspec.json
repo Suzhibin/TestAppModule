@@ -26,6 +26,9 @@
       "dependencies": {
         "MGJRouter": [
 
+        ],
+        "CTMediator": [
+
         ]
       },
       "ios": {

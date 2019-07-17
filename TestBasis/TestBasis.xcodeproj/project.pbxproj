@@ -19,6 +19,9 @@
 		9F93905822D5E8E900DAD186 /* TestBasis.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F93905722D5E8E900DAD186 /* TestBasis.xcassets */; };
 		9FA7E36522D859ED00332E45 /* RequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7E36422D859ED00332E45 /* RequestTool.m */; };
 		9FA7E36922D859FC00332E45 /* BasisTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7E36722D859FC00332E45 /* BasisTool.m */; };
+		9FACB93122DEBE3D0025F181 /* CTMediator+TestB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB93022DEBE3D0025F181 /* CTMediator+TestB.m */; };
+		9FACB93422DEBE690025F181 /* CTMediator+TestC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB93322DEBE690025F181 /* CTMediator+TestC.m */; };
+		9FACB93722DEBE970025F181 /* CTMediator+TestA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB93622DEBE970025F181 /* CTMediator+TestA.m */; };
 		A6BE6594C467C9205AB87C7F /* libPods-TestBasis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44241156346931E08D40FB80 /* libPods-TestBasis.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,12 @@
 		9FA7E36422D859ED00332E45 /* RequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestTool.m; sourceTree = "<group>"; };
 		9FA7E36722D859FC00332E45 /* BasisTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasisTool.m; sourceTree = "<group>"; };
 		9FA7E36822D859FC00332E45 /* BasisTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasisTool.h; sourceTree = "<group>"; };
+		9FACB92F22DEBE3D0025F181 /* CTMediator+TestB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+TestB.h"; sourceTree = "<group>"; };
+		9FACB93022DEBE3D0025F181 /* CTMediator+TestB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+TestB.m"; sourceTree = "<group>"; };
+		9FACB93222DEBE690025F181 /* CTMediator+TestC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+TestC.h"; sourceTree = "<group>"; };
+		9FACB93322DEBE690025F181 /* CTMediator+TestC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+TestC.m"; sourceTree = "<group>"; };
+		9FACB93522DEBE970025F181 /* CTMediator+TestA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+TestA.h"; sourceTree = "<group>"; };
+		9FACB93622DEBE970025F181 /* CTMediator+TestA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+TestA.m"; sourceTree = "<group>"; };
 		F3AF4D5E4398381ADB2BD469 /* Pods-TestBasis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBasis.release.xcconfig"; path = "Target Support Files/Pods-TestBasis/Pods-TestBasis.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +164,7 @@
 		9F93904D22D5E4AD00DAD186 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9FACB92E22DEBE150025F181 /* CTMediator_Category */,
 				9FA7E36622D859FC00332E45 /* BasisTool */,
 				9FA7E36222D859ED00332E45 /* RequestTool */,
 				9F93904F22D5E52A00DAD186 /* NSBundle+TextBundleName.h */,
@@ -181,6 +191,19 @@
 				9FA7E36722D859FC00332E45 /* BasisTool.m */,
 			);
 			path = BasisTool;
+			sourceTree = "<group>";
+		};
+		9FACB92E22DEBE150025F181 /* CTMediator_Category */ = {
+			isa = PBXGroup;
+			children = (
+				9FACB92F22DEBE3D0025F181 /* CTMediator+TestB.h */,
+				9FACB93022DEBE3D0025F181 /* CTMediator+TestB.m */,
+				9FACB93222DEBE690025F181 /* CTMediator+TestC.h */,
+				9FACB93322DEBE690025F181 /* CTMediator+TestC.m */,
+				9FACB93522DEBE970025F181 /* CTMediator+TestA.h */,
+				9FACB93622DEBE970025F181 /* CTMediator+TestA.m */,
+			);
+			path = CTMediator_Category;
 			sourceTree = "<group>";
 		};
 		D38EDFC01BECDC7108F0B287 /* Frameworks */ = {
@@ -361,9 +384,12 @@
 				9F93902022D5DA0A00DAD186 /* ViewController.m in Sources */,
 				9FA7E36522D859ED00332E45 /* RequestTool.m in Sources */,
 				9FA7E36922D859FC00332E45 /* BasisTool.m in Sources */,
+				9FACB93122DEBE3D0025F181 /* CTMediator+TestB.m in Sources */,
 				9F93902B22D5DA0B00DAD186 /* main.m in Sources */,
 				9F93905022D5E52A00DAD186 /* NSBundle+TextBundleName.m in Sources */,
 				9F93901D22D5DA0A00DAD186 /* AppDelegate.m in Sources */,
+				9FACB93422DEBE690025F181 /* CTMediator+TestC.m in Sources */,
+				9FACB93722DEBE970025F181 /* CTMediator+TestA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

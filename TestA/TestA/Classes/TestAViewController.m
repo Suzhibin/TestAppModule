@@ -8,6 +8,7 @@
 
 #import "TestAViewController.h"
 //#import "TestBasisHeader.h" pch引用了
+
 @interface TestAViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UIImageView *imageView;
 @end
@@ -35,6 +36,9 @@
     [self.view addSubview:table];
     
 }
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 3;
 }
@@ -46,16 +50,31 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    switch (indexPath.row) {
-        case 0:
-            cell.textLabel.text=@"进入TestB组件首页";
-            break;
-        case 1:
-            cell.textLabel.text=@"进入TestB组件详情页";
-            break;
-        case 2:
-            cell.textLabel.text=@"进入TestC组件首页带回调";
-            break;
+    if (indexPath.section==0) {
+        switch (indexPath.row) {
+                case 0:
+                cell.textLabel.text=@"(MGJRouter)进入TestB组件首页";
+                break;
+                case 1:
+                cell.textLabel.text=@"(MGJRouter)进入TestB组件详情页";
+                break;
+                case 2:
+                cell.textLabel.text=@"(MGJRouter)进入TestC组件首页带回调";
+                break;
+        }
+     
+    }else{
+        switch (indexPath.row) {
+                case 0:
+                cell.textLabel.text=@"(CTMediator)进入TestB组件首页";
+                break;
+                case 1:
+                cell.textLabel.text=@"(CTMediator)进入TestB组件详情页";
+                break;
+                case 2:
+                cell.textLabel.text=@"(CTMediator)进入TestC组件首页带回调";
+                break;
+        }
     }
     return cell;
     // indexPath.se
@@ -63,31 +82,43 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     __weak typeof(self) weakSelf = self;
-    switch (indexPath.row) {
-        case 0:
-            [MGJRouter openURL:URLWITHTestB
-                  withUserInfo:@{KEYWITHNavigation : self.navigationController,@"str":@"我从TestA来的"}
-                    completion:nil];
-            break;
-        case 1:
-            [MGJRouter openURL:URLWITHTestB
-                  withUserInfo:@{KEYWITHNavigation : self.navigationController,@"TestBDetailsViewController":@"跳转到确认offer",@"str":@"我从TestA来的"}
-                    completion:nil];
-            break;
-        case 2:
-            [MGJRouter openURL:URLWITHTestC
-                  withUserInfo:@{KEYWITHViewController: self,@"str":@"我从TestA来的"}
-                    completion:^(id result) {
-                        NSString *str=result;
-                        NSLog(@"%@",str);
-                        //BUNDLE_TESTA_MOUDLE TestA工程 图片路径
-                        UIImage *image= [UIImage imageNamed:@"tiger" inBundle:BUNDLE_TESTA_MOUDLE compatibleWithTraitCollection:nil];
-                        weakSelf.imageView.image=image;
-                    }];
-            break;
-            
-            
+    if (indexPath.section==0) {
+        switch (indexPath.row) {
+                case 0:
+                [MGJRouter openURL:URLWITHTestB
+                      withUserInfo:@{KEYWITHNavigation : self.navigationController,@"str":@"我从TestA来的"}
+                        completion:nil];
+                break;
+                case 1:
+                [MGJRouter openURL:URLWITHTestB
+                      withUserInfo:@{KEYWITHNavigation : self.navigationController,@"TestBDetailsViewController":@"跳转到确认offer",@"str":@"我从TestA来的"}
+                        completion:nil];
+                break;
+                case 2:
+                [MGJRouter openURL:URLWITHTestC
+                      withUserInfo:@{KEYWITHViewController: self,@"str":@"我从TestA来的"}
+                        completion:^(id result) {
+                            NSString *str=result;
+                            NSLog(@"%@",str);
+                            //BUNDLE_TESTA_MOUDLE TestA工程 图片路径
+                            UIImage *image= [UIImage imageNamed:@"tiger" inBundle:BUNDLE_TESTA_MOUDLE compatibleWithTraitCollection:nil];
+                            weakSelf.imageView.image=image;
+                        }];
+                break;
+                
+                
+        }
+    }else{
+        switch (indexPath.row) {
+                case 0:
+                
+                break;
+                
+            default:
+                break;
+        }
     }
+   
     
 }
 

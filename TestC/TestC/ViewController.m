@@ -26,9 +26,9 @@
     [self.view addSubview:btn_home];
 }
 - (void)btn_Action{
-    TestCViewController* testA=[[TestCViewController alloc]init];
+    TestCViewController* testC=[[TestCViewController alloc]init];
     
-    [self.navigationController pushViewController:testA animated:YES];
+    [self.navigationController pushViewController:testC animated:YES];
 }
 
 @end

@@ -1,14 +1,18 @@
 PODS:
+  - CTMediator (25)
   - MGJRouter (0.10.0)
   - TestAppModule/TestBasis (1.0.0):
+    - CTMediator
     - MGJRouter
 
 DEPENDENCIES:
+  - CTMediator
   - MGJRouter
   - TestAppModule/TestBasis (from `../TestAppModule`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CTMediator
     - MGJRouter
 
 EXTERNAL SOURCES:
@@ -16,9 +20,10 @@ EXTERNAL SOURCES:
     :path: "../TestAppModule"
 
 SPEC CHECKSUMS:
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
   MGJRouter: 15d94541eb2cc81eff7d577337288feb7ae9575f
-  TestAppModule: deb3acd7517025e2732134146ed79a06b0b18a19
+  TestAppModule: abfb61e7cdb25900d9914cd08f33873a78a53ed6
 
-PODFILE CHECKSUM: f78d4aadfd5b26feaa1c223238040951b92cb960
+PODFILE CHECKSUM: 7f104e9971917ba1c5167f747d1379162944a100
 
 COCOAPODS: 1.7.0.beta.3

@@ -29,7 +29,7 @@
     [self.view addSubview:imageView];
     self.imageView=imageView;
    
-    UITableView *table=[[UITableView alloc]initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, self.view.frame.size.height-300) style:UITableViewStylePlain];
+    UITableView *table=[[UITableView alloc]initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, self.view.frame.size.height-300) style:UITableViewStyleGrouped];
     table.delegate=self;
     table.dataSource=self;
     table.tableFooterView=[UIView new];
@@ -111,6 +111,35 @@
     }else{
         switch (indexPath.row) {
                 case 0:
+                {
+                    UIViewController *testB_VC=[[CTMediator sharedInstance]ModuleB_viewControllerWithCallback:^(NSString * _Nonnull result) {
+                        
+                    }];
+                                                
+                    [self.navigationController pushViewController:testB_VC animated:YES];
+                }
+             
+                break;
+                
+                case 1:
+            {
+                UIViewController *testB_VC=[[CTMediator sharedInstance]ModuleB_viewControllerWithCallback:^(NSString * _Nonnull result) {
+                    
+                }];
+                
+                [self.navigationController pushViewController:testB_VC animated:YES];
+            }
+                
+                break;
+                
+                case 2:
+            {
+                UIViewController *testC_VC=[[CTMediator sharedInstance]ModuleC_viewControllerWithCallback:^(NSString * _Nonnull result) {
+                    
+                }];
+                
+                [self.navigationController pushViewController:testC_VC animated:YES];
+            }
                 
                 break;
                 

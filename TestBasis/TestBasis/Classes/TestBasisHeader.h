@@ -13,14 +13,14 @@
 #import "RequestTool.h"
 #import "NSBundle+TextBundleName.h"
 
-
+//CTMediator
 #import "CTMediator+TestA.h"
 #import "CTMediator+TestB.h"
 #import "CTMediator+TestC.h"
 
 
 #import <MGJRouter.h>
-
+#import <CTMediator.h>
 
 
 

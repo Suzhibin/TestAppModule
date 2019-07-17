@@ -19,6 +19,7 @@
 		9F93905F22D5EA4000DAD186 /* TestAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93905D22D5EA4000DAD186 /* TestAViewController.m */; };
 		9F93906022D5EA4000DAD186 /* TestARoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93905E22D5EA4000DAD186 /* TestARoute.m */; };
 		9F93906F22D5F1FC00DAD186 /* TestA.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F93906E22D5F1FC00DAD186 /* TestA.xcassets */; };
+		9FACB94A22DED1990025F181 /* Target_TestA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB94922DED1990025F181 /* Target_TestA.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		9F93905E22D5EA4000DAD186 /* TestARoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestARoute.m; sourceTree = "<group>"; };
 		9F93906A22D5EB5C00DAD186 /* TestA.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestA.pch; sourceTree = "<group>"; };
 		9F93906E22D5F1FC00DAD186 /* TestA.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TestA.xcassets; sourceTree = "<group>"; };
+		9FACB94822DED1990025F181 /* Target_TestA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_TestA.h; sourceTree = "<group>"; };
+		9FACB94922DED1990025F181 /* Target_TestA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_TestA.m; sourceTree = "<group>"; };
 		C7906592871AEC613BAF9035 /* libPods-TestA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F8CC1BCC5D115BFA8FD47F /* Pods-TestA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestA.debug.xcconfig"; path = "Target Support Files/Pods-TestA/Pods-TestA.debug.xcconfig"; sourceTree = "<group>"; };
 		D426F1DB49A9D107EA714466 /* Pods-TestA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestA.release.xcconfig"; path = "Target Support Files/Pods-TestA/Pods-TestA.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,14 +173,32 @@
 		9F93905A22D5EA2500DAD186 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9F93905C22D5EA4000DAD186 /* TestARoute.h */,
-				9F93905E22D5EA4000DAD186 /* TestARoute.m */,
+				9FACB94722DED1870025F181 /* CTMediator_Target */,
+				9FACB94622DED17A0025F181 /* MGJRouter_Route */,
 				9F93905B22D5EA4000DAD186 /* TestAViewController.h */,
 				9F93905D22D5EA4000DAD186 /* TestAViewController.m */,
 				9F93906A22D5EB5C00DAD186 /* TestA.pch */,
 				9F93906E22D5F1FC00DAD186 /* TestA.xcassets */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		9FACB94622DED17A0025F181 /* MGJRouter_Route */ = {
+			isa = PBXGroup;
+			children = (
+				9F93905C22D5EA4000DAD186 /* TestARoute.h */,
+				9F93905E22D5EA4000DAD186 /* TestARoute.m */,
+			);
+			path = MGJRouter_Route;
+			sourceTree = "<group>";
+		};
+		9FACB94722DED1870025F181 /* CTMediator_Target */ = {
+			isa = PBXGroup;
+			children = (
+				9FACB94822DED1990025F181 /* Target_TestA.h */,
+				9FACB94922DED1990025F181 /* Target_TestA.m */,
+			);
+			path = CTMediator_Target;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +378,7 @@
 			files = (
 				9F93905F22D5EA4000DAD186 /* TestAViewController.m in Sources */,
 				9F938F6622D5D5D500DAD186 /* ViewController.m in Sources */,
+				9FACB94A22DED1990025F181 /* Target_TestA.m in Sources */,
 				9F93906022D5EA4000DAD186 /* TestARoute.m in Sources */,
 				9F938F7122D5D5D600DAD186 /* main.m in Sources */,
 				9F938F6322D5D5D500DAD186 /* AppDelegate.m in Sources */,

@@ -165,25 +165,33 @@
 		9F93905922D5EA1C00DAD186 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9FACB93C22DEC8DD0025F181 /* Target */,
+				9FACB94122DECFA80025F181 /* MGJRouter_Route */,
+				9FACB93C22DEC8DD0025F181 /* CTMediator_Target */,
 				9F93906622D5EA5700DAD186 /* TestBDetailsViewController.h */,
 				9F93906522D5EA5700DAD186 /* TestBDetailsViewController.m */,
 				9F93906122D5EA5700DAD186 /* TestBViewController.h */,
 				9F93906222D5EA5700DAD186 /* TestBViewController.m */,
-				9F93906322D5EA5700DAD186 /* TexsBRoute.h */,
-				9F93906422D5EA5700DAD186 /* TexsBRoute.m */,
 				9F93907022D5F21A00DAD186 /* TestB.xcassets */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		9FACB93C22DEC8DD0025F181 /* Target */ = {
+		9FACB93C22DEC8DD0025F181 /* CTMediator_Target */ = {
 			isa = PBXGroup;
 			children = (
 				9FACB93D22DEC90D0025F181 /* Target_TestB.h */,
 				9FACB93E22DEC90D0025F181 /* Target_TestB.m */,
 			);
-			path = Target;
+			path = CTMediator_Target;
+			sourceTree = "<group>";
+		};
+		9FACB94122DECFA80025F181 /* MGJRouter_Route */ = {
+			isa = PBXGroup;
+			children = (
+				9F93906322D5EA5700DAD186 /* TexsBRoute.h */,
+				9F93906422D5EA5700DAD186 /* TexsBRoute.m */,
+			);
+			path = MGJRouter_Route;
 			sourceTree = "<group>";
 		};
 		FFFB1BC0B95E64E042EAF2A4 /* Pods */ = {

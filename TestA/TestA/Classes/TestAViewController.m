@@ -115,7 +115,8 @@
                     UIViewController *testB_VC=[[CTMediator sharedInstance]ModuleB_viewControllerWithCallback:^(NSString * _Nonnull result) {
                         
                     }];
-                                                
+                    NSLog(@"testB_VC:%@",testB_VC);
+                    testB_VC.hidesBottomBarWhenPushed=YES;
                     [self.navigationController pushViewController:testB_VC animated:YES];
                 }
              
@@ -123,11 +124,10 @@
                 
                 case 1:
             {
-                UIViewController *testB_VC=[[CTMediator sharedInstance]ModuleB_viewControllerWithCallback:^(NSString * _Nonnull result) {
+                UIViewController *testBDetails_VC=[[CTMediator sharedInstance]ModuleBDetails_viewController:^(NSString * _Nonnull result) {
                     
                 }];
-                
-                [self.navigationController pushViewController:testB_VC animated:YES];
+                [self.navigationController pushViewController:testBDetails_VC animated:YES];
             }
                 
                 break;

@@ -18,6 +18,7 @@
 		9F9EDD5922D6C60B003E519A /* TestCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9EDD5822D6C60B003E519A /* TestCUITests.m */; };
 		9F9EDD7722D6CAB3003E519A /* TestCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9EDD7322D6CAB3003E519A /* TestCViewController.m */; };
 		9F9EDD7822D6CAB3003E519A /* TestCRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9EDD7422D6CAB3003E519A /* TestCRoute.m */; };
+		9FACB94522DED0010025F181 /* Target_TestC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB94422DED0010025F181 /* Target_TestC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		9F9EDD7422D6CAB3003E519A /* TestCRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCRoute.m; sourceTree = "<group>"; };
 		9F9EDD7522D6CAB3003E519A /* TestCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCViewController.h; sourceTree = "<group>"; };
 		9F9EDD7622D6CAB3003E519A /* TestCRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCRoute.h; sourceTree = "<group>"; };
+		9FACB94322DED0010025F181 /* Target_TestC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_TestC.h; sourceTree = "<group>"; };
+		9FACB94422DED0010025F181 /* Target_TestC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_TestC.m; sourceTree = "<group>"; };
 		FA03FA3F69C4DD725BBAF382 /* Pods-TestC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestC.debug.xcconfig"; path = "Target Support Files/Pods-TestC/Pods-TestC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,12 +170,30 @@
 		9F9EDD7222D6C64B003E519A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9F9EDD7622D6CAB3003E519A /* TestCRoute.h */,
-				9F9EDD7422D6CAB3003E519A /* TestCRoute.m */,
+				9FACB94222DECFDA0025F181 /* MGJRouter_Route */,
+				9FACB94022DECF880025F181 /* CTMediator_Target */,
 				9F9EDD7522D6CAB3003E519A /* TestCViewController.h */,
 				9F9EDD7322D6CAB3003E519A /* TestCViewController.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		9FACB94022DECF880025F181 /* CTMediator_Target */ = {
+			isa = PBXGroup;
+			children = (
+				9FACB94322DED0010025F181 /* Target_TestC.h */,
+				9FACB94422DED0010025F181 /* Target_TestC.m */,
+			);
+			path = CTMediator_Target;
+			sourceTree = "<group>";
+		};
+		9FACB94222DECFDA0025F181 /* MGJRouter_Route */ = {
+			isa = PBXGroup;
+			children = (
+				9F9EDD7622D6CAB3003E519A /* TestCRoute.h */,
+				9F9EDD7422D6CAB3003E519A /* TestCRoute.m */,
+			);
+			path = MGJRouter_Route;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FACB94522DED0010025F181 /* Target_TestC.m in Sources */,
 				9F9EDD3922D6C609003E519A /* ViewController.m in Sources */,
 				9F9EDD4422D6C60B003E519A /* main.m in Sources */,
 				9F9EDD7822D6CAB3003E519A /* TestCRoute.m in Sources */,

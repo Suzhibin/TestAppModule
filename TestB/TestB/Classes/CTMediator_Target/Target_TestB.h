@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Target_TestB : NSObject
 - (UIViewController *)Action_TestBViewController:(NSDictionary *)params;
-- (UIViewController *)Action_TestBDetailsVCViewController:(NSDictionary *)params;
+- (UIViewController *)Action_TestBDetailsViewController:(NSDictionary *)params;
 @end
 
 NS_ASSUME_NONNULL_END

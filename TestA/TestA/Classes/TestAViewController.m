@@ -99,7 +99,7 @@
                       withUserInfo:@{KEYWITHViewController: self,@"str":@"我从TestA来的"}
                         completion:^(id result) {
                             NSString *str=result;
-                            NSLog(@"%@",str);
+                            NSLog(@"result:%@",str);
                             //BUNDLE_TESTA_MOUDLE TestA工程 图片路径
                             UIImage *image= [UIImage imageNamed:@"tiger" inBundle:BUNDLE_TESTA_MOUDLE compatibleWithTraitCollection:nil];
                             weakSelf.imageView.image=image;
@@ -112,9 +112,7 @@
         switch (indexPath.row) {
                 case 0:
                 {
-                    UIViewController *testB_VC=[[CTMediator sharedInstance]ModuleB_viewControllerWithCallback:^(NSString * _Nonnull result) {
-                        
-                    }];
+                    UIViewController *testB_VC=[[CTMediator sharedInstance]ModuleB_viewControllerWithStr:@"我从TestA来的"];
                     NSLog(@"testB_VC:%@",testB_VC);
                     testB_VC.hidesBottomBarWhenPushed=YES;
                     [self.navigationController pushViewController:testB_VC animated:YES];
@@ -124,9 +122,8 @@
                 
                 case 1:
             {
-                UIViewController *testBDetails_VC=[[CTMediator sharedInstance]ModuleBDetails_viewController:^(NSString * _Nonnull result) {
-                    
-                }];
+                UIViewController *testBDetails_VC=[[CTMediator sharedInstance]ModuleBDetails_viewControllerWithStr:@"我从TestA来的"];
+                testBDetails_VC.hidesBottomBarWhenPushed=YES;
                 [self.navigationController pushViewController:testBDetails_VC animated:YES];
             }
                 
@@ -135,10 +132,16 @@
                 case 2:
             {
                 UIViewController *testC_VC=[[CTMediator sharedInstance]ModuleC_viewControllerWithCallback:^(NSString * _Nonnull result) {
-                    
+                    NSLog(@"result:%@",result);
+                    UIImage *image= [UIImage imageNamed:@"2222" inBundle:BUNDLE_BUSINESS_MOUDLE compatibleWithTraitCollection:nil];
+                    weakSelf.imageView.image=image;
                 }];
+    
+                dispatch_async(dispatch_get_main_queue(), ^{
+                     [self presentViewController:testC_VC animated:YES completion:nil];
+                });
                 
-                [self.navigationController pushViewController:testC_VC animated:YES];
+               
             }
                 
                 break;

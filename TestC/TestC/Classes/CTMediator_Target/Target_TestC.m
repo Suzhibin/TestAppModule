@@ -10,8 +10,16 @@
 #import "TestCViewController.h"
 @implementation Target_TestC
 - (UIViewController *)Action_TestCViewController:(NSDictionary *)params {
+    typedef void (^CallbackType)(NSString *);
+    CallbackType callback = params[@"callback"];
+    
     TestCViewController *testCVC = [[TestCViewController alloc] init];
-    if ([testBVC isKindOfClass:[UIViewController class]]) {
+    testCVC.TestCCompleteHandler = ^(NSString * _Nonnull text) {
+        if (callback) {
+            callback(text);
+        }
+    };
+    if ([testCVC isKindOfClass:[UIViewController class]]) {
         // view controller 交付出去之后，可以由外界选择是push还是present
         return testCVC;
     } else {

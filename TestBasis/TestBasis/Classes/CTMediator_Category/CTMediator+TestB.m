@@ -9,8 +9,9 @@
 #import "CTMediator+TestB.h"
 
 @implementation CTMediator (TestB)
-- (UIViewController *)ModuleB_viewControllerWithCallback:(void(^)(NSString *result))callback {
+- (UIViewController *)ModuleB_viewControllerWithStr:(NSString*)str{
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    params[@"str"] = str;
     /*
      1. 字符串 是类名 Target_xxx.h 中的 xxx 部分
      2. 字符串是 Target_xxx.h 中 定义的 Action_xxxx 函数名的 xxxx 部分
@@ -18,8 +19,9 @@
     return [self performTarget:@"TestB" action:@"TestBViewController" params:params shouldCacheTarget:NO];
 }
 
-- (UIViewController *)ModuleBDetails_viewController{
+- (UIViewController *)ModuleBDetails_viewControllerWithStr:(NSString*)str{
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    params[@"str"] = str;
     /*
      1. 字符串 是类名 Target_xxx.h 中的 xxx 部分
      2. 字符串是 Target_xxx.h 中 定义的 Action_xxxx 函数名的 xxxx 部分

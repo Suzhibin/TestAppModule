@@ -13,12 +13,6 @@
 #import "RequestTool.h"
 #import "NSBundle+TextBundleName.h"
 
-//CTMediator
-#import "CTMediator+TestA.h"
-#import "CTMediator+TestB.h"
-#import "CTMediator+TestC.h"
-
-
 #import <MGJRouter.h>
 #import <CTMediator.h>
 
@@ -33,6 +27,14 @@
 
 #define BUNDLE_TESTC_MOUDLE [NSBundle BundleWithPath:@"/TestC.bundle" withClass:[self class]]//TestC组件路径
 
+
+
+//CTMediator_Category
+#import "CTMediator+TestA.h"
+#import "CTMediator+TestB.h"
+#import "CTMediator+TestC.h"
+
+//MGJRouter_Route
 /** 组件跳转URL */
 #define URLWITHTestA @"TEST://TestAModule/PushVC"
 #define URLWITHTestB @"TEST://TestBModule/PushVC"
@@ -40,4 +42,5 @@
 
 #define KEYWITHNavigation @"navigationVC"
 #define KEYWITHViewController @"ViewController"
+
 #endif /* TestBasisHeader_h */

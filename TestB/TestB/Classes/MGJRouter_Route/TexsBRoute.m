@@ -25,6 +25,7 @@
             return;
         }
         TestBViewController *testBVC = [[TestBViewController alloc] init];
+        testBVC.str=str;
         testBVC.hidesBottomBarWhenPushed=YES;
         [navigationVC pushViewController:testBVC animated:YES];
     }];

@@ -113,9 +113,10 @@
                 case 0:
                 {
                     UIViewController *testB_VC=[[CTMediator sharedInstance]ModuleB_viewControllerWithStr:@"我从TestA来的"];
-                    NSLog(@"testB_VC:%@",testB_VC);
                     testB_VC.hidesBottomBarWhenPushed=YES;
-                    [self.navigationController pushViewController:testB_VC animated:YES];
+                    if (testB_VC) {
+                        [self.navigationController pushViewController:testB_VC animated:YES];
+                    }
                 }
              
                 break;
@@ -124,7 +125,9 @@
             {
                 UIViewController *testBDetails_VC=[[CTMediator sharedInstance]ModuleBDetails_viewControllerWithStr:@"我从TestA来的"];
                 testBDetails_VC.hidesBottomBarWhenPushed=YES;
-                [self.navigationController pushViewController:testBDetails_VC animated:YES];
+                if (testBDetails_VC) {
+                    [self.navigationController pushViewController:testBDetails_VC animated:YES];
+                }
             }
                 
                 break;
@@ -136,11 +139,11 @@
                     UIImage *image= [UIImage imageNamed:@"2222" inBundle:BUNDLE_BUSINESS_MOUDLE compatibleWithTraitCollection:nil];
                     weakSelf.imageView.image=image;
                 }];
-    
-                dispatch_async(dispatch_get_main_queue(), ^{
-                     [self presentViewController:testC_VC animated:YES completion:nil];
-                });
-                
+                if (testC_VC) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self presentViewController:testC_VC animated:YES completion:nil];
+                    });
+                }
                
             }
                 

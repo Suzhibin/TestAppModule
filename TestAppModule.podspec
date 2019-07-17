@@ -19,6 +19,7 @@ bm.resource_bundles = {
 ]
 }
 bm.dependency 'MGJRouter'
+bm.dependency 'CTMediator'
 
 bm.ios.framework  = 'UIKit'
 end

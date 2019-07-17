@@ -7,6 +7,7 @@ inhibit_all_warnings!
 target 'TestBasis' do
   project 'TestBasis/TestBasis.xcodeproj'
 pod "MGJRouter"
+pod "CTMediator"
 end
 
 target 'TestA' do

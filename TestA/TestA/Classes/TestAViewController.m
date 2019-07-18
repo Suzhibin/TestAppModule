@@ -29,7 +29,7 @@
     [self.view addSubview:imageView];
     self.imageView=imageView;
    
-    UITableView *table=[[UITableView alloc]initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, self.view.frame.size.height-300) style:UITableViewStyleGrouped];
+    UITableView *table=[[UITableView alloc]initWithFrame:CGRectMake(0, 320, self.view.frame.size.width, self.view.frame.size.height-300) style:UITableViewStylePlain];
     table.delegate=self;
     table.dataSource=self;
     table.tableFooterView=[UIView new];
@@ -53,26 +53,26 @@
     if (indexPath.section==0) {
         switch (indexPath.row) {
                 case 0:
-                cell.textLabel.text=@"(MGJRouter)进入TestB组件首页";
+                cell.textLabel.text=@"进入TestB组件首页";
                 break;
                 case 1:
-                cell.textLabel.text=@"(MGJRouter)进入TestB组件详情页";
+                cell.textLabel.text=@"进入TestB组件详情页";
                 break;
                 case 2:
-                cell.textLabel.text=@"(MGJRouter)进入TestC组件首页带回调";
+                cell.textLabel.text=@"进入TestC组件首页带回调";
                 break;
         }
      
     }else{
         switch (indexPath.row) {
                 case 0:
-                cell.textLabel.text=@"(CTMediator)进入TestB组件首页";
+                cell.textLabel.text=@"进入TestB组件首页";
                 break;
                 case 1:
-                cell.textLabel.text=@"(CTMediator)进入TestB组件详情页";
+                cell.textLabel.text=@"进入TestB组件详情页";
                 break;
                 case 2:
-                cell.textLabel.text=@"(CTMediator)进入TestC组件首页带回调";
+                cell.textLabel.text=@"进入TestC组件首页带回调";
                 break;
         }
     }
@@ -153,10 +153,21 @@
                 break;
         }
     }
-   
-    
 }
-
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UILabel *nameLabel=[[UILabel alloc]init];
+    nameLabel.backgroundColor=[UIColor colorWithRed:0.98f green:0.98f blue:0.98f alpha:1.00f];
+    nameLabel.textAlignment=NSTextAlignmentCenter;
+    if (section==0) {
+        nameLabel.text=@"MGJRouter";
+    }else{
+        nameLabel.text=@"CTMediator";
+    }
+    return nameLabel;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 44;
+}
 /*
 #pragma mark - Navigation
 

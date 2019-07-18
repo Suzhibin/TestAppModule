@@ -158,10 +158,15 @@
     UILabel *nameLabel=[[UILabel alloc]init];
     nameLabel.backgroundColor=[UIColor colorWithRed:0.98f green:0.98f blue:0.98f alpha:1.00f];
     nameLabel.textAlignment=NSTextAlignmentCenter;
-    if (section==0) {
-        nameLabel.text=@"MGJRouter";
-    }else{
-        nameLabel.text=@"CTMediator";
+    switch (section) {
+        case 0:
+            nameLabel.text=@"MGJRouter";
+            break;
+        case 1:
+            nameLabel.text=@"CTMediator";
+            break;
+        default:
+            break;
     }
     return nameLabel;
 }

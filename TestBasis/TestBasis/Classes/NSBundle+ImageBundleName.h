@@ -1,8 +1,8 @@
 //
-//  NSBundle+TextBundleName.h
-//  basis
+//  NSBundle+ImageBundleName.h
+//  TestBasis
 //
-//  Created by Suzhibin on 2019/6/5.
+//  Created by Suzhibin on 2019/8/23.
 //  Copyright © 2019 Suzhibin. All rights reserved.
 //
 
@@ -10,8 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSBundle (TextBundleName)
-
+@interface NSBundle (ImageBundleName)
 + (NSBundle *)BundleWithPath:(NSString *)bundlePath withClass:(id)className;
 @end
 

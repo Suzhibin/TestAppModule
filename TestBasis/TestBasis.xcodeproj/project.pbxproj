@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F64D11A230F8AC6003FEBFA /* UIImage+imageWithName.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F64D119230F8AC6003FEBFA /* UIImage+imageWithName.m */; };
+		9F64D11D230F8B1F003FEBFA /* NSBundle+ImageBundleName.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F64D11C230F8B1F003FEBFA /* NSBundle+ImageBundleName.m */; };
 		9F93901D22D5DA0A00DAD186 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93901C22D5DA0A00DAD186 /* AppDelegate.m */; };
 		9F93902022D5DA0A00DAD186 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93901F22D5DA0A00DAD186 /* ViewController.m */; };
 		9F93902322D5DA0A00DAD186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F93902122D5DA0A00DAD186 /* Main.storyboard */; };
@@ -15,7 +17,6 @@
 		9F93902B22D5DA0B00DAD186 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93902A22D5DA0B00DAD186 /* main.m */; };
 		9F93903522D5DA0C00DAD186 /* TestBasisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93903422D5DA0C00DAD186 /* TestBasisTests.m */; };
 		9F93904022D5DA0C00DAD186 /* TestBasisUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93903F22D5DA0C00DAD186 /* TestBasisUITests.m */; };
-		9F93905022D5E52A00DAD186 /* NSBundle+TextBundleName.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93904E22D5E52A00DAD186 /* NSBundle+TextBundleName.m */; };
 		9F93905822D5E8E900DAD186 /* TestBasis.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F93905722D5E8E900DAD186 /* TestBasis.xcassets */; };
 		9FA7E36522D859ED00332E45 /* RequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7E36422D859ED00332E45 /* RequestTool.m */; };
 		9FA7E36922D859FC00332E45 /* BasisTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7E36722D859FC00332E45 /* BasisTool.m */; };
@@ -45,6 +46,10 @@
 /* Begin PBXFileReference section */
 		44241156346931E08D40FB80 /* libPods-TestBasis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestBasis.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62149119196A6C15809FF4C4 /* Pods-TestBasis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBasis.debug.xcconfig"; path = "Target Support Files/Pods-TestBasis/Pods-TestBasis.debug.xcconfig"; sourceTree = "<group>"; };
+		9F64D118230F8AC6003FEBFA /* UIImage+imageWithName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+imageWithName.h"; sourceTree = "<group>"; };
+		9F64D119230F8AC6003FEBFA /* UIImage+imageWithName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+imageWithName.m"; sourceTree = "<group>"; };
+		9F64D11B230F8B1F003FEBFA /* NSBundle+ImageBundleName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+ImageBundleName.h"; sourceTree = "<group>"; };
+		9F64D11C230F8B1F003FEBFA /* NSBundle+ImageBundleName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+ImageBundleName.m"; sourceTree = "<group>"; };
 		9F93901822D5DA0A00DAD186 /* TestBasis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBasis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F93901B22D5DA0A00DAD186 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F93901C22D5DA0A00DAD186 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,8 +66,6 @@
 		9F93903B22D5DA0C00DAD186 /* TestBasisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestBasisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F93903F22D5DA0C00DAD186 /* TestBasisUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBasisUITests.m; sourceTree = "<group>"; };
 		9F93904122D5DA0C00DAD186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F93904E22D5E52A00DAD186 /* NSBundle+TextBundleName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TextBundleName.m"; sourceTree = "<group>"; };
-		9F93904F22D5E52A00DAD186 /* NSBundle+TextBundleName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TextBundleName.h"; sourceTree = "<group>"; };
 		9F93905622D5E59900DAD186 /* TestBasisHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBasisHeader.h; sourceTree = "<group>"; };
 		9F93905722D5E8E900DAD186 /* TestBasis.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TestBasis.xcassets; sourceTree = "<group>"; };
 		9FA7E36322D859ED00332E45 /* RequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestTool.h; sourceTree = "<group>"; };
@@ -167,10 +170,12 @@
 				9FACB92E22DEBE150025F181 /* CTMediator_Category */,
 				9FA7E36622D859FC00332E45 /* BasisTool */,
 				9FA7E36222D859ED00332E45 /* RequestTool */,
-				9F93904F22D5E52A00DAD186 /* NSBundle+TextBundleName.h */,
-				9F93904E22D5E52A00DAD186 /* NSBundle+TextBundleName.m */,
 				9F93905622D5E59900DAD186 /* TestBasisHeader.h */,
 				9F93905722D5E8E900DAD186 /* TestBasis.xcassets */,
+				9F64D118230F8AC6003FEBFA /* UIImage+imageWithName.h */,
+				9F64D119230F8AC6003FEBFA /* UIImage+imageWithName.m */,
+				9F64D11B230F8B1F003FEBFA /* NSBundle+ImageBundleName.h */,
+				9F64D11C230F8B1F003FEBFA /* NSBundle+ImageBundleName.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -381,15 +386,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F64D11A230F8AC6003FEBFA /* UIImage+imageWithName.m in Sources */,
 				9F93902022D5DA0A00DAD186 /* ViewController.m in Sources */,
 				9FA7E36522D859ED00332E45 /* RequestTool.m in Sources */,
 				9FA7E36922D859FC00332E45 /* BasisTool.m in Sources */,
 				9FACB93122DEBE3D0025F181 /* CTMediator+TestB.m in Sources */,
 				9F93902B22D5DA0B00DAD186 /* main.m in Sources */,
-				9F93905022D5E52A00DAD186 /* NSBundle+TextBundleName.m in Sources */,
 				9F93901D22D5DA0A00DAD186 /* AppDelegate.m in Sources */,
 				9FACB93422DEBE690025F181 /* CTMediator+TestC.m in Sources */,
 				9FACB93722DEBE970025F181 /* CTMediator+TestA.m in Sources */,
+				9F64D11D230F8B1F003FEBFA /* NSBundle+ImageBundleName.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,14 +1,14 @@
 //
-//  NSBundle+TextBundleName.m
-//  basis
+//  NSBundle+ImageBundleName.m
+//  TestBasis
 //
-//  Created by Suzhibin on 2019/6/5.
+//  Created by Suzhibin on 2019/8/23.
 //  Copyright © 2019 Suzhibin. All rights reserved.
 //
 
-#import "NSBundle+TextBundleName.h"
+#import "NSBundle+ImageBundleName.h"
 
-@implementation NSBundle (TextBundleName)
+@implementation NSBundle (ImageBundleName)
 +(NSBundle *)BundleWithPath:(NSString *)bundlePath withClass:(id)className{
     NSString *Path = [[NSBundle bundleForClass:[className class]].resourcePath
                       stringByAppendingPathComponent:bundlePath];

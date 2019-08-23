@@ -11,7 +11,8 @@
 
 #import "BasisTool.h"
 #import "RequestTool.h"
-#import "NSBundle+TextBundleName.h"
+#import "NSBundle+ImageBundleName.h"
+#import "UIImage+imageWithName.h"
 
 #import <MGJRouter.h>
 #import <CTMediator.h>

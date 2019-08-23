@@ -24,6 +24,7 @@
     
     
     UIImage *image= [UIImage imageNamed:@"1111" inBundle:BUNDLE_BUSINESS_MOUDLE compatibleWithTraitCollection:nil];
+    //UIImage *image=[UIImage imageWithName:@"1111" withClass:self];// 如果图片都放在在basis工程里 用这个就可以
     UIImageView *imageView=[[UIImageView alloc]initWithFrame:CGRectMake(50, 100, self.view.frame.size.width-100, 200)];
     imageView.image=image;
     [self.view addSubview:imageView];

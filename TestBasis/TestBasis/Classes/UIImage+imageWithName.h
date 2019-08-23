@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (imageWithName)
-
++ (UIImage *)imageWithName:(NSString *)name withClass:(id)className;
 @end
 
 NS_ASSUME_NONNULL_END

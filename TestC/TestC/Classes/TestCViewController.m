@@ -8,7 +8,6 @@
 
 #import "TestCViewController.h"
 #import "TestBasisHeader.h"
-#import "BasisTool.h"//没有集成BasisTool 打开报错
 #import "RequestTool.h"
 @interface TestCViewController ()
 
@@ -26,7 +25,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor blueColor];
 
-    //[BasisTool toolMethods:@"TestC"];//没有集成BasisTool
+    //[BasisTool toolMethods:@"TestC"];//TestC没有集成BasisTool
     [RequestTool requestWithText:@"TestC"];
     
     UIButton *btn= [UIButton buttonWithType:UIButtonTypeCustom];

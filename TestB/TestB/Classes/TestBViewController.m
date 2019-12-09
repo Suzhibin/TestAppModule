@@ -22,7 +22,7 @@
     self.view.backgroundColor=[UIColor yellowColor];
     self.title=self.str;
     [BasisTool toolMethods:@"TestB"];
-   // [RequestTool requestWithText:@"TestB"];//没有集成RequestTool 
+   // [RequestTool requestWithText:@"TestB"];//TestB没有集成RequestTool 
     
     UIButton *btn_Details= [UIButton buttonWithType:UIButtonTypeCustom];
     [btn_Details setTitle:@"TestB组件详情" forState:UIControlStateNormal];

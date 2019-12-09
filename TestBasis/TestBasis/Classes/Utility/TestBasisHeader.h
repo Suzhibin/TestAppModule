@@ -9,8 +9,6 @@
 #ifndef TestBasisHeader_h
 #define TestBasisHeader_h
 
-#import "BasisTool.h"
-#import "RequestTool.h"
 #import "NSBundle+ImageBundleName.h"
 #import "UIImage+imageWithName.h"
 

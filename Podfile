@@ -12,15 +12,19 @@ end
 
 target 'TestA' do
   project 'TestA/TestA.xcodeproj'
-  pod 'TestAppModule/TestBasis', :path => '../TestAppModule'
+  pod 'TestAppModule/TestBasis/Utility', :path => '../TestAppModule'
+  pod 'TestAppModule/TestBasis/RequestTool', :path => '../TestAppModule'
+  pod 'TestAppModule/TestBasis/BasisTool', :path => '../TestAppModule'
 end
 
 target 'TestB' do
   project 'TestB/TestB.xcodeproj'
-  pod 'TestAppModule/TestBasis', :path => '../TestAppModule'
+  pod 'TestAppModule/TestBasis/Utility', :path => '../TestAppModule'
+  pod 'TestAppModule/TestBasis/BasisTool', :path => '../TestAppModule'
 end
 
 target 'TestC' do
   project 'TestC/TestC.xcodeproj'
-  pod 'TestAppModule/TestBasis', :path => '../TestAppModule'
+  pod 'TestAppModule/TestBasis/Utility', :path => '../TestAppModule'
+  pod 'TestAppModule/TestBasis/RequestTool', :path => '../TestAppModule'
 end

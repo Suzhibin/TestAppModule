@@ -12,16 +12,52 @@ s.ios.deployment_target = '9.0'
 
 #基础组件
 s.subspec 'TestBasis' do |bm|
+    
+    # BasisTool
+    bm.subspec 'BasisTool' do |ba|
+    ba.source_files = 'TestBasis/TestBasis/Classes/BasisTool/**/*.{h,m}'
+    ba.resource_bundles = {
+        'BasisTool' => [
+    'TestBasis/TestBasis/Classes/BasisTool/**/*.{storyboard,xcassets,xib,plist}'
+        ]
+    }
+    ba.ios.framework  = 'UIKit'
+    end
+    
+    # RequestTool
+    bm.subspec 'RequestTool' do |rq|
+    rq.source_files = 'TestBasis/TestBasis/Classes/RequestTool/**/*.{h,m}'
+    rq.resource_bundles = {
+        'RequestTool' => [
+    'TestBasis/TestBasis/Classes/RequestTool/**/*.{storyboard,xcassets,xib,plist}'
+        ]
+    }
+    rq.ios.framework  = 'UIKit'
+    end
+    
+    # Utility
+    bm.subspec 'Utility' do |ut|
+    ut.source_files = 'TestBasis/TestBasis/Classes/Utility/**/*.{h,m}'
+    ut.resource_bundles = {
+        'Utility' => [
+    'TestBasis/TestBasis/Classes/Utility/**/*.{storyboard,xcassets,xib,plist}'
+        ]
+    }
+    ut.ios.framework  = 'UIKit'
+    ut.dependency 'MGJRouter'
+    ut.dependency 'CTMediator'
+    end
+
 bm.source_files = 'TestBasis/TestBasis/Classes/**/*.{h,m}'
 bm.resource_bundles = {
 'TestBasis' => [
 'TestBasis/TestBasis/Classes/**/*.{storyboard,xcassets,xib,json}'
 ]
 }
-bm.dependency 'MGJRouter'
-bm.dependency 'CTMediator'
+#bm.dependency 'MGJRouter'
+#bm.dependency 'CTMediator'
 
-bm.ios.framework  = 'UIKit'
+#bm.ios.framework  = 'UIKit'
 end
 
 #TestA组件

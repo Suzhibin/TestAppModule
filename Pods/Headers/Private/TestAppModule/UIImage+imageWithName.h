@@ -1,1 +1,1 @@
-../../../../TestBasis/TestBasis/Classes/UIImage+imageWithName.h
+../../../../TestBasis/TestBasis/Classes/Utility/UIImage+imageWithName.h

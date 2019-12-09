@@ -167,15 +167,9 @@
 		9F93904D22D5E4AD00DAD186 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9FACB92E22DEBE150025F181 /* CTMediator_Category */,
+				9FB27806239DD9BE002B4913 /* Utility */,
 				9FA7E36622D859FC00332E45 /* BasisTool */,
 				9FA7E36222D859ED00332E45 /* RequestTool */,
-				9F93905622D5E59900DAD186 /* TestBasisHeader.h */,
-				9F93905722D5E8E900DAD186 /* TestBasis.xcassets */,
-				9F64D118230F8AC6003FEBFA /* UIImage+imageWithName.h */,
-				9F64D119230F8AC6003FEBFA /* UIImage+imageWithName.m */,
-				9F64D11B230F8B1F003FEBFA /* NSBundle+ImageBundleName.h */,
-				9F64D11C230F8B1F003FEBFA /* NSBundle+ImageBundleName.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -209,6 +203,20 @@
 				9FACB93622DEBE970025F181 /* CTMediator+TestA.m */,
 			);
 			path = CTMediator_Category;
+			sourceTree = "<group>";
+		};
+		9FB27806239DD9BE002B4913 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9FACB92E22DEBE150025F181 /* CTMediator_Category */,
+				9F93905722D5E8E900DAD186 /* TestBasis.xcassets */,
+				9F93905622D5E59900DAD186 /* TestBasisHeader.h */,
+				9F64D118230F8AC6003FEBFA /* UIImage+imageWithName.h */,
+				9F64D119230F8AC6003FEBFA /* UIImage+imageWithName.m */,
+				9F64D11B230F8B1F003FEBFA /* NSBundle+ImageBundleName.h */,
+				9F64D11C230F8B1F003FEBFA /* NSBundle+ImageBundleName.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		D38EDFC01BECDC7108F0B287 /* Frameworks */ = {

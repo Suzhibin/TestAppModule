@@ -1,1 +1,1 @@
-../../../../TestBasis/TestBasis/Classes/NSBundle+ImageBundleName.h
+../../../../TestBasis/TestBasis/Classes/Utility/NSBundle+ImageBundleName.h

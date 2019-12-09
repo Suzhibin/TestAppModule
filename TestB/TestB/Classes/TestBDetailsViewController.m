@@ -7,7 +7,7 @@
 //
 
 #import "TestBDetailsViewController.h"
-#import "TestBasisHeader.h"
+#import "BasisTool.h"
 @interface TestBDetailsViewController ()
 
 @end
@@ -20,7 +20,7 @@
     self.view.backgroundColor=[UIColor orangeColor];
     self.title=self.str;
     [BasisTool toolMethods:@"B_Details"];
-    [RequestTool requestWithText:@"B_Details"];
+  //  [RequestTool requestWithText:@"B_Details"];//没有集成RequestTool 
 }
 
 /*

@@ -7,7 +7,11 @@
 //
 
 #import "TestAViewController.h"
-//#import "TestBasisHeader.h" pch引用了
+/** pch引用了
+ #import "TestBasisHeader.h"
+ #import "BasisTool.h"
+ #import "RequestTool.h"
+ */
 
 @interface TestAViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UIImageView *imageView;

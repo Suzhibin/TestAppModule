@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-TestC/Pods-TestC-resources.sh
-${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule/TestBasis.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-TestBasis_RequestTool-TestBasis_Utility/RequestTool.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-TestBasis_RequestTool-TestBasis_Utility/Utility.bundle

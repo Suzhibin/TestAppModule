@@ -23,17 +23,52 @@
           "TestBasis/TestBasis/Classes/**/*.{storyboard,xcassets,xib,json}"
         ]
       },
-      "dependencies": {
-        "MGJRouter": [
+      "subspecs": [
+        {
+          "name": "BasisTool",
+          "source_files": "TestBasis/TestBasis/Classes/BasisTool/**/*.{h,m}",
+          "resource_bundles": {
+            "BasisTool": [
+              "TestBasis/TestBasis/Classes/BasisTool/**/*.{storyboard,xcassets,xib,plist}"
+            ]
+          },
+          "ios": {
+            "frameworks": "UIKit"
+          }
+        },
+        {
+          "name": "RequestTool",
+          "source_files": "TestBasis/TestBasis/Classes/RequestTool/**/*.{h,m}",
+          "resource_bundles": {
+            "RequestTool": [
+              "TestBasis/TestBasis/Classes/RequestTool/**/*.{storyboard,xcassets,xib,plist}"
+            ]
+          },
+          "ios": {
+            "frameworks": "UIKit"
+          }
+        },
+        {
+          "name": "Utility",
+          "source_files": "TestBasis/TestBasis/Classes/Utility/**/*.{h,m}",
+          "resource_bundles": {
+            "Utility": [
+              "TestBasis/TestBasis/Classes/Utility/**/*.{storyboard,xcassets,xib,plist}"
+            ]
+          },
+          "ios": {
+            "frameworks": "UIKit"
+          },
+          "dependencies": {
+            "MGJRouter": [
 
-        ],
-        "CTMediator": [
+            ],
+            "CTMediator": [
 
-        ]
-      },
-      "ios": {
-        "frameworks": "UIKit"
-      }
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "TestA",

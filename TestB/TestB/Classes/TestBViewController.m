@@ -8,6 +8,7 @@
 
 #import "TestBViewController.h"
 #import "TestBasisHeader.h"
+#import "BasisTool.h"
 #import "TestBDetailsViewController.h"
 @interface TestBViewController ()
 
@@ -21,7 +22,7 @@
     self.view.backgroundColor=[UIColor yellowColor];
     self.title=self.str;
     [BasisTool toolMethods:@"TestB"];
-    [RequestTool requestWithText:@"TestB"];
+   // [RequestTool requestWithText:@"TestB"];//没有集成RequestTool 
     
     UIButton *btn_Details= [UIButton buttonWithType:UIButtonTypeCustom];
     [btn_Details setTitle:@"TestB组件详情" forState:UIControlStateNormal];
@@ -37,7 +38,6 @@
     detailsVC.hidesBottomBarWhenPushed=YES;
     [self.navigationController pushViewController:detailsVC animated:YES];
 }
-/*
 
 /*
 #pragma mark - Navigation

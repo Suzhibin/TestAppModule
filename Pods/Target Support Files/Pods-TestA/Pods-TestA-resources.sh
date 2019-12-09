@@ -97,14 +97,16 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-1e2db02e/BasisTool.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-1e2db02e/RequestTool.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-1e2db02e/Utility.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-4e009c65/TestBasis.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-4e009c65/BasisTool.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-4e009c65/RequestTool.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-4e009c65/Utility.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-1e2db02e/BasisTool.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-1e2db02e/RequestTool.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-1e2db02e/Utility.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-4e009c65/TestBasis.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-4e009c65/BasisTool.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-4e009c65/RequestTool.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-4e009c65/Utility.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

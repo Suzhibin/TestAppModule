@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 @protocol TestCViewControllerProtocol <NSObject>
 
-- (__kindof UIViewController *_Nullable)testC_ViewControllerWithDict:(NSDictionary *_Nullable)dict;
+- (__kindof UIViewController *_Nullable)testC_ViewControllerWithDict:(NSDictionary *_Nullable)dict callback:(void(^_Nullable)(NSString * _Nullable result))callback;
 @end

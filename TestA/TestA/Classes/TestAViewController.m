@@ -166,7 +166,7 @@
         switch (indexPath.row) {
             case 0:
             {
-                Class cls = [ZBRouter classForProtocol:@protocol(ZBViewControllerProtocol)];
+                Class cls = [ZBRouter classForProtocol:@protocol(TestBViewControllerProtocol)];
                 UIViewController *testB_VC= [[cls alloc] testB_ViewControllerWithDict:@{@"title":@"ZBRouter_我从TestA来的",@"row":@(indexPath.row)}];
                 testB_VC.hidesBottomBarWhenPushed=YES;
                 [self.navigationController pushViewController:testB_VC animated:YES];
@@ -174,7 +174,7 @@
             break;
             case 1:
             {
-                Class cls = [ZBRouter classForProtocol:@protocol(ZBViewControllerProtocol)];
+                Class cls = [ZBRouter classForProtocol:@protocol(TestBDetailsViewControllerProtocol)];
                 UIViewController *testBDetails_VC= [[cls alloc] testBDetails_ViewControllerWithDict:@{@"title":@"ZBRouter_我从TestA来的",@"row":@(indexPath.row)}];
                 testBDetails_VC.hidesBottomBarWhenPushed=YES;
                 [self.navigationController pushViewController:testBDetails_VC animated:YES];
@@ -182,10 +182,15 @@
             break;
             case 2:
             {
-                Class cls = [ZBRouter classForProtocol:@protocol(ZBViewControllerProtocol)];
+                Class cls = [ZBRouter classForProtocol:@protocol(TestCViewControllerProtocol)];
                 if (cls) {
+                    UIViewController *testC_VC= [[cls alloc] testC_ViewControllerWithDict:@{@"title":@"ZBRouter_我从TestA来的",@"row":@(indexPath.row)} callback:^(NSString * _Nullable result) {
+                        NSLog(@"result:%@",result);
+                        UIImage *image= [UIImage imageNamed:@"3333" inBundle:BUNDLE_BUSINESS_MOUDLE compatibleWithTraitCollection:nil];
+                        weakSelf.imageView.image=image;
+                    }];
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        [self presentViewController:[[cls alloc] testC_ViewControllerWithDict:@"ZBRouter_我从TestA来的"] animated:YES completion:nil];
+                        [self presentViewController:testC_VC animated:YES completion:nil];
                     });
                 }
             }

@@ -9,7 +9,7 @@
 #import "TestBDetailsViewController.h"
 #import "BasisTool.h"
 #import "ZBRouter.h"
-//#import "TestB_Protocol.h"
+#import "TestB_Protocol.h"
 @interface TestBDetailsViewController ()
 
 @end
@@ -25,12 +25,13 @@
   //  [RequestTool requestWithText:@"B_Details"];//没有集成RequestTool 
 }
 + (void)load {
-   // [ZBRouter registerProtol:@protocol(ZBViewControllerProtocol) class:[TestBDetailsViewController class]];
+    [ZBRouter registerProtol:@protocol(TestBDetailsViewControllerProtocol) class:[self class]];
 }
 #pragma mark - ZBViewControllerProtocol
 - (__kindof UIViewController *_Nullable)testBDetails_ViewControllerWithDict:(NSDictionary *)dict{
     TestBDetailsViewController *testBDetailsVC=[[TestBDetailsViewController alloc]init];
-    testBDetailsVC.str=[dict objectForKey:@"title"];
+     NSNumber *row=[dict objectForKey:@"row"];
+    testBDetailsVC.str=[NSString stringWithFormat:@"%@_%ld",[dict objectForKey:@"title"],row.integerValue];
     return testBDetailsVC;
 }
 /*

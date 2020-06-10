@@ -11,6 +11,7 @@
 #import "BasisTool.h"
 #import "TestBDetailsViewController.h"
 #import "ZBRouter.h"
+#import "TestB_Protocol.h"
 @interface TestBViewController ()
 
 @end
@@ -40,7 +41,7 @@
     [self.navigationController pushViewController:detailsVC animated:YES];
 }
 + (void)load {
-    //[ZBRouter registerProtol:@protocol(TestBViewControllerProtocol) class:[TestBViewController class]];
+    [ZBRouter registerProtol:@protocol(TestBViewControllerProtocol) class:[self class]];
 }
 #pragma mark - ZBViewControllerProtocol
 - (__kindof UIViewController *_Nullable)testB_ViewControllerWithDict:(NSDictionary *)dict{

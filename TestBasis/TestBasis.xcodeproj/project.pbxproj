@@ -81,6 +81,8 @@
 		9FACB93622DEBE970025F181 /* CTMediator+TestA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+TestA.m"; sourceTree = "<group>"; };
 		9FF839522490828800C7A6E6 /* ZBRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBRouter.h; sourceTree = "<group>"; };
 		9FF839532490828800C7A6E6 /* ZBRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBRouter.m; sourceTree = "<group>"; };
+		9FF8395824909FAA00C7A6E6 /* TestB_Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestB_Protocol.h; sourceTree = "<group>"; };
+		9FF839592490A0B500C7A6E6 /* TestC_Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestC_Protocol.h; sourceTree = "<group>"; };
 		F3AF4D5E4398381ADB2BD469 /* Pods-TestBasis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBasis.release.xcconfig"; path = "Target Support Files/Pods-TestBasis/Pods-TestBasis.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,6 +213,7 @@
 		9FB27806239DD9BE002B4913 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				9FF8395624909F5F00C7A6E6 /* ZBRouterProtocol */,
 				9FF839522490828800C7A6E6 /* ZBRouter.h */,
 				9FF839532490828800C7A6E6 /* ZBRouter.m */,
 				9FACB92E22DEBE150025F181 /* CTMediator_Category */,
@@ -222,6 +225,15 @@
 				9F64D11C230F8B1F003FEBFA /* NSBundle+ImageBundleName.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		9FF8395624909F5F00C7A6E6 /* ZBRouterProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				9FF8395824909FAA00C7A6E6 /* TestB_Protocol.h */,
+				9FF839592490A0B500C7A6E6 /* TestC_Protocol.h */,
+			);
+			path = ZBRouterProtocol;
 			sourceTree = "<group>";
 		};
 		D38EDFC01BECDC7108F0B287 /* Frameworks */ = {

@@ -12,6 +12,7 @@
 #import "TestBasisHeader.h"
 @implementation TexsBRoute
 + (void)load {
+    //url scheme
     [MGJRouter registerURLPattern:URLWITHTestB toHandler:^(NSDictionary *routerParameters) {
         UINavigationController *navigationVC = routerParameters[MGJRouterParameterUserInfo][KEYWITHNavigation];
         NSString *str=routerParameters[MGJRouterParameterUserInfo][@"str"];

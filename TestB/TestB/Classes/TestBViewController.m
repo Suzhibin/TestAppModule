@@ -10,6 +10,7 @@
 #import "TestBasisHeader.h"
 #import "BasisTool.h"
 #import "TestBDetailsViewController.h"
+#import "ZBRouter.h"
 @interface TestBViewController ()
 
 @end
@@ -38,7 +39,16 @@
     detailsVC.hidesBottomBarWhenPushed=YES;
     [self.navigationController pushViewController:detailsVC animated:YES];
 }
-
++ (void)load {
+    //[ZBRouter registerProtol:@protocol(TestBViewControllerProtocol) class:[TestBViewController class]];
+}
+#pragma mark - ZBViewControllerProtocol
+- (__kindof UIViewController *_Nullable)testB_ViewControllerWithDict:(NSDictionary *)dict{
+    TestBViewController *testBVC=[[TestBViewController alloc]init];
+    NSNumber *row=[dict objectForKey:@"row"];
+    testBVC.str=[NSString stringWithFormat:@"%@_%ld",[dict objectForKey:@"title"],row.integerValue];
+    return testBVC;
+}
 /*
 #pragma mark - Navigation
 

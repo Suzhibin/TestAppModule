@@ -34,7 +34,7 @@
     [self.view addSubview:imageView];
     self.imageView=imageView;
    
-    UITableView *table=[[UITableView alloc]initWithFrame:CGRectMake(0, 320, self.view.frame.size.width, self.view.frame.size.height-300) style:UITableViewStylePlain];
+    UITableView *table=[[UITableView alloc]initWithFrame:CGRectMake(0, 320, self.view.frame.size.width, self.view.frame.size.height-320) style:UITableViewStylePlain];
     table.delegate=self;
     table.dataSource=self;
     table.tableFooterView=[UIView new];
@@ -42,7 +42,7 @@
     
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 2;
+    return 3;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 3;
@@ -68,6 +68,18 @@
                 break;
         }
      
+    }else if (indexPath.section==1){
+        switch (indexPath.row) {
+                case 0:
+                cell.textLabel.text=@"进入TestB组件首页";
+                break;
+                case 1:
+                cell.textLabel.text=@"进入TestB组件详情页";
+                break;
+                case 2:
+                cell.textLabel.text=@"进入TestC组件首页带回调";
+                break;
+        }
     }else{
         switch (indexPath.row) {
                 case 0:
@@ -91,17 +103,17 @@
         switch (indexPath.row) {
                 case 0:
                 [MGJRouter openURL:URLWITHTestB
-                      withUserInfo:@{KEYWITHNavigation : self.navigationController,@"str":@"我从TestA来的"}
+                      withUserInfo:@{KEYWITHNavigation : self.navigationController,@"str":@"MGJRouter我从TestA来的"}
                         completion:nil];
                 break;
                 case 1:
                 [MGJRouter openURL:URLWITHTestB
-                      withUserInfo:@{KEYWITHNavigation : self.navigationController,@"TestBDetailsViewController":@"跳转到确认offer",@"str":@"我从TestA来的"}
+                      withUserInfo:@{KEYWITHNavigation : self.navigationController,@"TestBDetailsViewController":@"跳转到确认offer",@"str":@"MGJRouter我从TestA来的"}
                         completion:nil];
                 break;
                 case 2:
                 [MGJRouter openURL:URLWITHTestC
-                      withUserInfo:@{KEYWITHViewController: self,@"str":@"我从TestA来的"}
+                      withUserInfo:@{KEYWITHViewController: self,@"str":@"MGJRouter我从TestA来的"}
                         completion:^(id result) {
                             NSString *str=result;
                             NSLog(@"result:%@",str);
@@ -113,31 +125,27 @@
                 
                 
         }
-    }else{
+    }else if (indexPath.section==1){
         switch (indexPath.row) {
-                case 0:
-                {
-                    UIViewController *testB_VC=[[CTMediator sharedInstance]ModuleB_viewControllerWithStr:@"我从TestA来的"];
-                    testB_VC.hidesBottomBarWhenPushed=YES;
-                    if (testB_VC) {
-                        [self.navigationController pushViewController:testB_VC animated:YES];
-                    }
-                }
-             
-                break;
-                
-                case 1:
+            case 0:
             {
-                UIViewController *testBDetails_VC=[[CTMediator sharedInstance]ModuleBDetails_viewControllerWithStr:@"我从TestA来的"];
+                UIViewController *testB_VC=[[CTMediator sharedInstance]ModuleB_viewControllerWithStr:@"CTMediator_我从TestA来的"];
+                testB_VC.hidesBottomBarWhenPushed=YES;
+                if (testB_VC) {
+                    [self.navigationController pushViewController:testB_VC animated:YES];
+                }
+            }
+            break;
+            case 1:
+            {
+                UIViewController *testBDetails_VC=[[CTMediator sharedInstance]ModuleBDetails_viewControllerWithStr:@"CTMediator_我从TestA来的"];
                 testBDetails_VC.hidesBottomBarWhenPushed=YES;
                 if (testBDetails_VC) {
                     [self.navigationController pushViewController:testBDetails_VC animated:YES];
                 }
             }
-                
-                break;
-                
-                case 2:
+            break;
+            case 2:
             {
                 UIViewController *testC_VC=[[CTMediator sharedInstance]ModuleC_viewControllerWithCallback:^(NSString * _Nonnull result) {
                     NSLog(@"result:%@",result);
@@ -149,11 +157,39 @@
                         [self presentViewController:testC_VC animated:YES completion:nil];
                     });
                 }
-               
             }
-                
+            break;
+            default:
                 break;
-                
+            }
+    }else{
+        switch (indexPath.row) {
+            case 0:
+            {
+                Class cls = [ZBRouter classForProtocol:@protocol(ZBViewControllerProtocol)];
+                UIViewController *testB_VC= [[cls alloc] testB_ViewControllerWithDict:@{@"title":@"ZBRouter_我从TestA来的",@"row":@(indexPath.row)}];
+                testB_VC.hidesBottomBarWhenPushed=YES;
+                [self.navigationController pushViewController:testB_VC animated:YES];
+            }
+            break;
+            case 1:
+            {
+                Class cls = [ZBRouter classForProtocol:@protocol(ZBViewControllerProtocol)];
+                UIViewController *testBDetails_VC= [[cls alloc] testBDetails_ViewControllerWithDict:@{@"title":@"ZBRouter_我从TestA来的",@"row":@(indexPath.row)}];
+                testBDetails_VC.hidesBottomBarWhenPushed=YES;
+                [self.navigationController pushViewController:testBDetails_VC animated:YES];
+            }
+            break;
+            case 2:
+            {
+                Class cls = [ZBRouter classForProtocol:@protocol(ZBViewControllerProtocol)];
+                if (cls) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self presentViewController:[[cls alloc] testC_ViewControllerWithDict:@"ZBRouter_我从TestA来的"] animated:YES completion:nil];
+                    });
+                }
+            }
+            break;
             default:
                 break;
         }
@@ -169,6 +205,9 @@
             break;
         case 1:
             nameLabel.text=@"CTMediator";
+            break;
+        case 2:
+            nameLabel.text=@"ZBRouter";
             break;
         default:
             break;

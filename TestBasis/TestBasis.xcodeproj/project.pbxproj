@@ -23,6 +23,7 @@
 		9FACB93122DEBE3D0025F181 /* CTMediator+TestB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB93022DEBE3D0025F181 /* CTMediator+TestB.m */; };
 		9FACB93422DEBE690025F181 /* CTMediator+TestC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB93322DEBE690025F181 /* CTMediator+TestC.m */; };
 		9FACB93722DEBE970025F181 /* CTMediator+TestA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB93622DEBE970025F181 /* CTMediator+TestA.m */; };
+		9FF839542490828800C7A6E6 /* ZBRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF839532490828800C7A6E6 /* ZBRouter.m */; };
 		A6BE6594C467C9205AB87C7F /* libPods-TestBasis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44241156346931E08D40FB80 /* libPods-TestBasis.a */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,8 @@
 		9FACB93322DEBE690025F181 /* CTMediator+TestC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+TestC.m"; sourceTree = "<group>"; };
 		9FACB93522DEBE970025F181 /* CTMediator+TestA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+TestA.h"; sourceTree = "<group>"; };
 		9FACB93622DEBE970025F181 /* CTMediator+TestA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+TestA.m"; sourceTree = "<group>"; };
+		9FF839522490828800C7A6E6 /* ZBRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBRouter.h; sourceTree = "<group>"; };
+		9FF839532490828800C7A6E6 /* ZBRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBRouter.m; sourceTree = "<group>"; };
 		F3AF4D5E4398381ADB2BD469 /* Pods-TestBasis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBasis.release.xcconfig"; path = "Target Support Files/Pods-TestBasis/Pods-TestBasis.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +211,8 @@
 		9FB27806239DD9BE002B4913 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				9FF839522490828800C7A6E6 /* ZBRouter.h */,
+				9FF839532490828800C7A6E6 /* ZBRouter.m */,
 				9FACB92E22DEBE150025F181 /* CTMediator_Category */,
 				9F93905722D5E8E900DAD186 /* TestBasis.xcassets */,
 				9F93905622D5E59900DAD186 /* TestBasisHeader.h */,
@@ -399,6 +404,7 @@
 				9FA7E36522D859ED00332E45 /* RequestTool.m in Sources */,
 				9FA7E36922D859FC00332E45 /* BasisTool.m in Sources */,
 				9FACB93122DEBE3D0025F181 /* CTMediator+TestB.m in Sources */,
+				9FF839542490828800C7A6E6 /* ZBRouter.m in Sources */,
 				9F93902B22D5DA0B00DAD186 /* main.m in Sources */,
 				9F93901D22D5DA0A00DAD186 /* AppDelegate.m in Sources */,
 				9FACB93422DEBE690025F181 /* CTMediator+TestC.m in Sources */,

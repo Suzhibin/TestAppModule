@@ -15,6 +15,7 @@
 
 @interface TestAViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UIImageView *imageView;
+@property (nonatomic,strong)NSMutableArray *dataArray;
 @end
 
 @implementation TestAViewController
@@ -25,6 +26,8 @@
     self.view.backgroundColor=[UIColor whiteColor];
     [BasisTool toolMethods:@"TestA"];
     [RequestTool requestWithText:@"TestA"];
+    self.dataArray=[NSMutableArray arrayWithObjects:@"进入TestB组件首页",@"进入TestB组件详情页",@"进入TestC组件首页带回调", nil];
+    
     
     
     UIImage *image= [UIImage imageNamed:@"1111" inBundle:BUNDLE_BUSINESS_MOUDLE compatibleWithTraitCollection:nil];
@@ -42,7 +45,7 @@
     
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 3;
+    return self.dataArray.count;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 3;
@@ -55,46 +58,8 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    if (indexPath.section==0) {
-        switch (indexPath.row) {
-                case 0:
-                cell.textLabel.text=@"进入TestB组件首页";
-                break;
-                case 1:
-                cell.textLabel.text=@"进入TestB组件详情页";
-                break;
-                case 2:
-                cell.textLabel.text=@"进入TestC组件首页带回调";
-                break;
-        }
-     
-    }else if (indexPath.section==1){
-        switch (indexPath.row) {
-                case 0:
-                cell.textLabel.text=@"进入TestB组件首页";
-                break;
-                case 1:
-                cell.textLabel.text=@"进入TestB组件详情页";
-                break;
-                case 2:
-                cell.textLabel.text=@"进入TestC组件首页带回调";
-                break;
-        }
-    }else{
-        switch (indexPath.row) {
-                case 0:
-                cell.textLabel.text=@"进入TestB组件首页";
-                break;
-                case 1:
-                cell.textLabel.text=@"进入TestB组件详情页";
-                break;
-                case 2:
-                cell.textLabel.text=@"进入TestC组件首页带回调";
-                break;
-        }
-    }
+    cell.textLabel.text=self.dataArray[indexPath.row];
     return cell;
-    // indexPath.se
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

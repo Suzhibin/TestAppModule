@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor=[UIColor yellowColor];
+    self.view.backgroundColor=[UIColor blueColor];
     self.title=self.str;
     [BasisTool toolMethods:@"TestB"];
    // [RequestTool requestWithText:@"TestB"];//TestB没有集成RequestTool 

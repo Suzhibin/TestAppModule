@@ -19,7 +19,7 @@
 		9F93906822D5EA5700DAD186 /* TexsBRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93906422D5EA5700DAD186 /* TexsBRoute.m */; };
 		9F93906922D5EA5700DAD186 /* TestBDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93906522D5EA5700DAD186 /* TestBDetailsViewController.m */; };
 		9FACB93F22DEC90D0025F181 /* Target_TestB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB93E22DEC90D0025F181 /* Target_TestB.m */; };
-		E740186AD920A5846570732B /* libPods-TestB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D32E26D6633882599E53125D /* libPods-TestB.a */; };
+		B3FB5941C39895E6108C0C1A /* libPods-TestB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B29F22BBF8827109DAA818A /* libPods-TestB.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B29F22BBF8827109DAA818A /* libPods-TestB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A7AD0CF55836114FB26AE7 /* Pods-TestB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestB.release.xcconfig"; path = "Target Support Files/Pods-TestB/Pods-TestB.release.xcconfig"; sourceTree = "<group>"; };
 		9F938F9C22D5D5FA00DAD186 /* TestB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F938F9F22D5D5FA00DAD186 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		9FACB93D22DEC90D0025F181 /* Target_TestB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_TestB.h; sourceTree = "<group>"; };
 		9FACB93E22DEC90D0025F181 /* Target_TestB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_TestB.m; sourceTree = "<group>"; };
 		ACE3F3D1793CF0402989F581 /* Pods-TestB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestB.debug.xcconfig"; path = "Target Support Files/Pods-TestB/Pods-TestB.debug.xcconfig"; sourceTree = "<group>"; };
-		D32E26D6633882599E53125D /* libPods-TestB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E740186AD920A5846570732B /* libPods-TestB.a in Frameworks */,
+				B3FB5941C39895E6108C0C1A /* libPods-TestB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 		8FC22001C871343B096423FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D32E26D6633882599E53125D /* libPods-TestB.a */,
+				2B29F22BBF8827109DAA818A /* libPods-TestB.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 				9F938F9822D5D5FA00DAD186 /* Sources */,
 				9F938F9922D5D5FA00DAD186 /* Frameworks */,
 				9F938F9A22D5D5FA00DAD186 /* Resources */,
-				937A5C035A259279FC883E28 /* [CP] Copy Pods Resources */,
+				4061F191A512E97E3EC4F202 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -351,7 +351,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		937A5C035A259279FC883E28 /* [CP] Copy Pods Resources */ = {
+		4061F191A512E97E3EC4F202 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

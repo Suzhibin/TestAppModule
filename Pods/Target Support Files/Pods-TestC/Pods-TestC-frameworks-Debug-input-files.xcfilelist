@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-TestC/Pods-TestC-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework
+${BUILT_PRODUCTS_DIR}/MGJRouter/MGJRouter.framework
+${BUILT_PRODUCTS_DIR}/TestAppModule-TestBasis_RequestTool-TestBasis_Utility/TestAppModule.framework

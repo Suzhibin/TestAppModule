@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CTMediator (TestA)
 - (UIViewController *)ModuleA_viewControllerWithCallback:(void(^)(NSString *result))callback;
+
 @end
 
 NS_ASSUME_NONNULL_END

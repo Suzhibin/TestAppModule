@@ -12,8 +12,8 @@
 #import "NSBundle+ImageBundleName.h"
 #import "UIImage+imageWithName.h"
 
-#import <MGJRouter.h>
-#import <CTMediator.h>
+#import "MGJRouter.h"
+#import "CTMediator.h"
 
 //CTMediator_Category
 #import "CTMediator+TestA.h"

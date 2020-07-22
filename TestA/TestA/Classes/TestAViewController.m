@@ -12,7 +12,6 @@
  #import "BasisTool.h"
  #import "RequestTool.h"
  */
-
 @interface TestAViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UIImageView *imageView;
 @property (nonatomic,strong)NSMutableArray *dataArray;
@@ -27,8 +26,6 @@
     [BasisTool toolMethods:@"TestA"];
     [RequestTool requestWithText:@"TestA"];
     self.dataArray=[NSMutableArray arrayWithObjects:@"进入TestB组件首页",@"进入TestB组件详情页",@"进入TestC组件首页带回调", nil];
-    
-    
     
     UIImage *image= [UIImage imageNamed:@"1111" inBundle:BUNDLE_BUSINESS_MOUDLE compatibleWithTraitCollection:nil];
     //UIImage *image=[UIImage imageWithName:@"1111" withClass:self];// 如果图片都放在在basis工程里 用这个就可以
@@ -45,10 +42,10 @@
     
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return self.dataArray.count;
+    return 3;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return self.dataArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *userCell = @"userCell";

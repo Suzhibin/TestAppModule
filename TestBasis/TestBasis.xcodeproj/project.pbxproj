@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76375C5212287006397D71BA /* libPods-TestBasis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7CD38DD9DAA98E00B36D4F /* libPods-TestBasis.a */; };
 		9F64D11A230F8AC6003FEBFA /* UIImage+imageWithName.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F64D119230F8AC6003FEBFA /* UIImage+imageWithName.m */; };
 		9F64D11D230F8B1F003FEBFA /* NSBundle+ImageBundleName.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F64D11C230F8B1F003FEBFA /* NSBundle+ImageBundleName.m */; };
 		9F93901D22D5DA0A00DAD186 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93901C22D5DA0A00DAD186 /* AppDelegate.m */; };
@@ -24,7 +25,6 @@
 		9FACB93422DEBE690025F181 /* CTMediator+TestC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB93322DEBE690025F181 /* CTMediator+TestC.m */; };
 		9FACB93722DEBE970025F181 /* CTMediator+TestA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB93622DEBE970025F181 /* CTMediator+TestA.m */; };
 		9FF839542490828800C7A6E6 /* ZBRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF839532490828800C7A6E6 /* ZBRouter.m */; };
-		A6BE6594C467C9205AB87C7F /* libPods-TestBasis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44241156346931E08D40FB80 /* libPods-TestBasis.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		44241156346931E08D40FB80 /* libPods-TestBasis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestBasis.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62149119196A6C15809FF4C4 /* Pods-TestBasis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBasis.debug.xcconfig"; path = "Target Support Files/Pods-TestBasis/Pods-TestBasis.debug.xcconfig"; sourceTree = "<group>"; };
 		9F64D118230F8AC6003FEBFA /* UIImage+imageWithName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+imageWithName.h"; sourceTree = "<group>"; };
 		9F64D119230F8AC6003FEBFA /* UIImage+imageWithName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+imageWithName.m"; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		9FF839532490828800C7A6E6 /* ZBRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBRouter.m; sourceTree = "<group>"; };
 		9FF8395824909FAA00C7A6E6 /* TestB_Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestB_Protocol.h; sourceTree = "<group>"; };
 		9FF839592490A0B500C7A6E6 /* TestC_Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestC_Protocol.h; sourceTree = "<group>"; };
+		BE7CD38DD9DAA98E00B36D4F /* libPods-TestBasis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestBasis.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3AF4D5E4398381ADB2BD469 /* Pods-TestBasis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBasis.release.xcconfig"; path = "Target Support Files/Pods-TestBasis/Pods-TestBasis.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6BE6594C467C9205AB87C7F /* libPods-TestBasis.a in Frameworks */,
+				76375C5212287006397D71BA /* libPods-TestBasis.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +239,7 @@
 		D38EDFC01BECDC7108F0B287 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				44241156346931E08D40FB80 /* libPods-TestBasis.a */,
+				BE7CD38DD9DAA98E00B36D4F /* libPods-TestBasis.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -322,6 +322,7 @@
 				TargetAttributes = {
 					9F93901722D5DA0A00DAD186 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1140;
 					};
 					9F93902F22D5DA0C00DAD186 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -593,6 +594,7 @@
 			baseConfigurationReference = 62149119196A6C15809FF4C4 /* Pods-TestBasis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestBasis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -601,6 +603,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.TestBasis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestBasis/Classes/Utility/CTMediator_Category/TestBasis-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -610,6 +615,7 @@
 			baseConfigurationReference = F3AF4D5E4398381ADB2BD469 /* Pods-TestBasis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestBasis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -618,6 +624,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.TestBasis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestBasis/Classes/Utility/CTMediator_Category/TestBasis-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

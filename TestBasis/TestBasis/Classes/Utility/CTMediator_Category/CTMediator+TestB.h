@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIViewController *)ModuleB_viewControllerWithStr:(NSString*)str;
 
 - (UIViewController *)ModuleBDetails_viewControllerWithStr:(NSString*)str;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -48,7 +48,7 @@ s.subspec 'TestBasis' do |bm|
     ut.dependency 'CTMediator'
     end
 
-bm.source_files = 'TestBasis/TestBasis/Classes/**/*.{h,m}'
+bm.source_files = 'TestBasis/TestBasis/Classes/**/*.{h,m,swift}'
 bm.resource_bundles = {
 'TestBasis' => [
 'TestBasis/TestBasis/Classes/**/*.{storyboard,xcassets,xib,json}'
@@ -56,13 +56,13 @@ bm.resource_bundles = {
 }
 #bm.dependency 'MGJRouter'
 #bm.dependency 'CTMediator'
-
+#
 #bm.ios.framework  = 'UIKit'
 end
 
 #TestA组件
 s.subspec 'TestA' do |a|
-a.source_files = 'TestA/TestA/Classes/**/*.{h,m}'
+a.source_files = 'TestA/TestA/Classes/**/*.{h,m,swift}'
 a.resource_bundles = {
 'TestA' => [
 'TestA/TestA/Classes/**/*.{storyboard,xcassets,xib,json}'
@@ -100,4 +100,5 @@ c.resource_bundles = {
 c.dependency 'TestAppModule/TestBasis'
 c.ios.framework  = 'UIKit'
 end
+
 end

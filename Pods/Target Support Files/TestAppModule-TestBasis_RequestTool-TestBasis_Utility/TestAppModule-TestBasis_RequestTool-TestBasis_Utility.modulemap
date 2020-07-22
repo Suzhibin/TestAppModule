@@ -1,0 +1,6 @@
+framework module TestAppModule {
+  umbrella header "TestAppModule-TestBasis_RequestTool-TestBasis_Utility-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -17,7 +17,7 @@
   "subspecs": [
     {
       "name": "TestBasis",
-      "source_files": "TestBasis/TestBasis/Classes/**/*.{h,m}",
+      "source_files": "TestBasis/TestBasis/Classes/**/*.{h,m,swift}",
       "resource_bundles": {
         "TestBasis": [
           "TestBasis/TestBasis/Classes/**/*.{storyboard,xcassets,xib,json}"
@@ -72,7 +72,7 @@
     },
     {
       "name": "TestA",
-      "source_files": "TestA/TestA/Classes/**/*.{h,m}",
+      "source_files": "TestA/TestA/Classes/**/*.{h,m,swift}",
       "resource_bundles": {
         "TestA": [
           "TestA/TestA/Classes/**/*.{storyboard,xcassets,xib,json}"

@@ -8,6 +8,7 @@
 
 #import "CTMediator.h"
 #import <objc/runtime.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParamsKeySwiftTargetModuleName";
 
@@ -26,6 +27,7 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         mediator = [[CTMediator alloc] init];
+        [mediator cachedTarget]; // 同时把cachedTarget初始化，避免多线程重复初始化
     });
     return mediator;
 }
@@ -39,13 +41,18 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
 
 - (id)performActionWithUrl:(NSURL *)url completion:(void (^)(NSDictionary *))completion
 {
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    NSString *urlString = [url query];
-    for (NSString *param in [urlString componentsSeparatedByString:@"&"]) {
-        NSArray *elts = [param componentsSeparatedByString:@"="];
-        if([elts count] < 2) continue;
-        [params setObject:[elts lastObject] forKey:[elts firstObject]];
+    if (url == nil||![url isKindOfClass:[NSURL class]]) {
+        return nil;
     }
+    
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithString:url.absoluteString];
+    // 遍历所有参数
+    [urlComponents.queryItems enumerateObjectsUsingBlock:^(NSURLQueryItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (obj.value&&obj.name) {
+            [params setObject:obj.value forKey:obj.name];
+        }
+    }];
     
     // 这里这么写主要是出于安全考虑，防止黑客通过远程方式调用本地模块。这里的做法足以应对绝大多数场景，如果要求更加严苛，也可以做更加复杂的安全逻辑。
     NSString *actionName = [url.path stringByReplacingOccurrencesOfString:@"/" withString:@""];
@@ -67,6 +74,10 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
 
 - (id)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params shouldCacheTarget:(BOOL)shouldCacheTarget
 {
+    if (targetName == nil || actionName == nil) {
+        return nil;
+    }
+    
     NSString *swiftModuleName = params[kCTMediatorParamsKeySwiftTargetModuleName];
     
     // generate target
@@ -76,7 +87,7 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
     } else {
         targetClassString = [NSString stringWithFormat:@"Target_%@", targetName];
     }
-    NSObject *target = self.cachedTarget[targetClassString];
+    NSObject *target = [self safeFetchCachedTarget:targetClassString];
     if (target == nil) {
         Class targetClass = NSClassFromString(targetClassString);
         target = [[targetClass alloc] init];
@@ -93,7 +104,7 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
     }
     
     if (shouldCacheTarget) {
-        self.cachedTarget[targetClassString] = target;
+        [self safeSetCachedTarget:target key:targetClassString];
     }
 
     if ([target respondsToSelector:action]) {
@@ -106,16 +117,25 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
         } else {
             // 这里也是处理无响应请求的地方，在notFound都没有的时候，这个demo是直接return了。实际开发过程中，可以用前面提到的固定的target顶上的。
             [self NoTargetActionResponseWithTargetString:targetClassString selectorString:actionString originParams:params];
-            [self.cachedTarget removeObjectForKey:targetClassString];
+            @synchronized (self) {
+                [self.cachedTarget removeObjectForKey:targetClassString];
+            }
             return nil;
         }
     }
 }
 
-- (void)releaseCachedTargetWithTargetName:(NSString *)targetName
+- (void)releaseCachedTargetWithFullTargetName:(NSString *)fullTargetName
 {
-    NSString *targetClassString = [NSString stringWithFormat:@"Target_%@", targetName];
-    [self.cachedTarget removeObjectForKey:targetClassString];
+    /*
+     fullTargetName在oc环境下，就是Target_XXXX。要带上Target_前缀。在swift环境下，就是XXXModule.Target_YYY。不光要带上Target_前缀，还要带上模块名。
+     */
+    if (fullTargetName == nil) {
+        return;
+    }
+    @synchronized (self) {
+        [self.cachedTarget removeObjectForKey:fullTargetName];
+    }
 }
 
 #pragma mark - private methods
@@ -208,4 +228,21 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
     return _cachedTarget;
 }
 
+- (NSObject *)safeFetchCachedTarget:(NSString *)key {
+    @synchronized (self) {
+        return self.cachedTarget[key];
+    }
+}
+
+- (void)safeSetCachedTarget:(NSObject *)target key:(NSString *)key {
+    @synchronized (self) {
+        self.cachedTarget[key] = target;
+    }
+}
+
+
 @end
+
+CTMediator* _Nonnull CT(void){
+    return [CTMediator sharedInstance];
+};

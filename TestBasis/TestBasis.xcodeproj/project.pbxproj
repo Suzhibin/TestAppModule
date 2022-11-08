@@ -24,6 +24,7 @@
 		9FACB93122DEBE3D0025F181 /* CTMediator+TestB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB93022DEBE3D0025F181 /* CTMediator+TestB.m */; };
 		9FACB93422DEBE690025F181 /* CTMediator+TestC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB93322DEBE690025F181 /* CTMediator+TestC.m */; };
 		9FACB93722DEBE970025F181 /* CTMediator+TestA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACB93622DEBE970025F181 /* CTMediator+TestA.m */; };
+		9FD7955C291A503300128494 /* MGJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD7955B291A503300128494 /* MGJRouter.m */; };
 		9FF839542490828800C7A6E6 /* ZBRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF839532490828800C7A6E6 /* ZBRouter.m */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,8 @@
 		9FACB93322DEBE690025F181 /* CTMediator+TestC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+TestC.m"; sourceTree = "<group>"; };
 		9FACB93522DEBE970025F181 /* CTMediator+TestA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+TestA.h"; sourceTree = "<group>"; };
 		9FACB93622DEBE970025F181 /* CTMediator+TestA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+TestA.m"; sourceTree = "<group>"; };
+		9FD7955A291A503300128494 /* MGJRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGJRouter.h; sourceTree = "<group>"; };
+		9FD7955B291A503300128494 /* MGJRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGJRouter.m; sourceTree = "<group>"; };
 		9FF839522490828800C7A6E6 /* ZBRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBRouter.h; sourceTree = "<group>"; };
 		9FF839532490828800C7A6E6 /* ZBRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBRouter.m; sourceTree = "<group>"; };
 		9FF8395824909FAA00C7A6E6 /* TestB_Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestB_Protocol.h; sourceTree = "<group>"; };
@@ -213,6 +216,7 @@
 		9FB27806239DD9BE002B4913 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				9FD79559291A503300128494 /* MGJRouter */,
 				9FF8395624909F5F00C7A6E6 /* ZBRouterProtocol */,
 				9FF839522490828800C7A6E6 /* ZBRouter.h */,
 				9FF839532490828800C7A6E6 /* ZBRouter.m */,
@@ -225,6 +229,15 @@
 				9F64D11C230F8B1F003FEBFA /* NSBundle+ImageBundleName.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		9FD79559291A503300128494 /* MGJRouter */ = {
+			isa = PBXGroup;
+			children = (
+				9FD7955A291A503300128494 /* MGJRouter.h */,
+				9FD7955B291A503300128494 /* MGJRouter.m */,
+			);
+			path = MGJRouter;
 			sourceTree = "<group>";
 		};
 		9FF8395624909F5F00C7A6E6 /* ZBRouterProtocol */ = {
@@ -421,6 +434,7 @@
 				9F93902B22D5DA0B00DAD186 /* main.m in Sources */,
 				9F93901D22D5DA0A00DAD186 /* AppDelegate.m in Sources */,
 				9FACB93422DEBE690025F181 /* CTMediator+TestC.m in Sources */,
+				9FD7955C291A503300128494 /* MGJRouter.m in Sources */,
 				9FACB93722DEBE970025F181 /* CTMediator+TestA.m in Sources */,
 				9F64D11D230F8B1F003FEBFA /* NSBundle+ImageBundleName.m in Sources */,
 			);

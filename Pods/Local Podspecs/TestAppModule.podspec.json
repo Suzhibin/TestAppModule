@@ -60,9 +60,6 @@
             "frameworks": "UIKit"
           },
           "dependencies": {
-            "MGJRouter": [
-
-            ],
             "CTMediator": [
 
             ]
@@ -81,6 +78,9 @@
       "prefix_header_file": "TestA/TestA/Classes/TestA.pch",
       "dependencies": {
         "TestAppModule/TestBasis": [
+
+        ],
+        "TestAppModule/WBRenZHeng": [
 
         ]
       },
@@ -121,6 +121,31 @@
       "ios": {
         "frameworks": "UIKit"
       }
+    },
+    {
+      "name": "WBRenZHeng",
+      "ios": {
+        "vendored_frameworks": "WBRenZHeng/WBRenZHeng/WBCloudReflectionFaceVerify_framework/**/*.{framework}",
+        "resources": "WBCloudReflectionFaceVerify_framework/WBCloudReflectionFaceVerify_framework/WBCloudReflectionFaceVerify_framework/Resources/*.bundle"
+      },
+      "frameworks": [
+        "UIKit",
+        "AVFoundation",
+        "MobileCoreServices",
+        "CoreVideo",
+        "Accelerate",
+        "Security",
+        "SystemConfiguration",
+        "CoreMedia",
+        "AudioToolbox",
+        "CoreTelephony",
+        "ImageIO",
+        "WebKit"
+      ],
+      "libraries": [
+        "c++",
+        "z"
+      ]
     }
   ]
 }

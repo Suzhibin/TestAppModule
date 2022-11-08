@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:WBRenZHeng/WBRenZHeng.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TestAppModule.podspec">
    </FileRef>
    <FileRef

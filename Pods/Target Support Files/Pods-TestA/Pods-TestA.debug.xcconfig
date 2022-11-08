@@ -1,10 +1,13 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../WBRenZHeng/WBRenZHeng/WBCloudReflectionFaceVerify_framework/Libs"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CTMediator" "${PODS_ROOT}/Headers/Public/MGJRouter" "${PODS_ROOT}/Headers/Public/TestAppModule"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CTMediator" "${PODS_CONFIGURATION_BUILD_DIR}/MGJRouter" "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-4e009c65"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CTMediator" -isystem "${PODS_ROOT}/Headers/Public/MGJRouter" -isystem "${PODS_ROOT}/Headers/Public/TestAppModule"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"CTMediator" -l"MGJRouter" -l"TestAppModule-4e009c65" -framework "UIKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CTMediator" "${PODS_ROOT}/Headers/Public/TestAppModule"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CTMediator" "${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-625c0ac3"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CTMediator" -isystem "${PODS_ROOT}/Headers/Public/TestAppModule" -iframework "${PODS_ROOT}/../WBRenZHeng/WBRenZHeng/WBCloudReflectionFaceVerify_framework/Libs"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"CTMediator" -l"TestAppModule-625c0ac3" -l"c++" -l"z" -framework "AVFoundation" -framework "Accelerate" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreTelephony" -framework "CoreVideo" -framework "Foundation" -framework "ImageIO" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "WBCloudReflectionFaceVerify" -framework "WebKit" -framework "YTCommon" -framework "YTFaceAlignmentTiny" -framework "YTFaceDetector" -framework "YTFaceLiveReflect" -framework "YTFaceTracker" -framework "YTPoseDetector" -framework "tiny_opencv2" -framework "tnn"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/..
 PODS_ROOT = ${SRCROOT}/../Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
 USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

@@ -12,6 +12,7 @@
  #import "BasisTool.h"
  #import "RequestTool.h"
  */
+#import <WBCloudReflectionFaceVerify/WBFaceVerifyCustomerService.h>
 @interface TestAViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UIImageView *imageView;
 @property (nonatomic,strong)NSMutableArray *dataArray;
@@ -22,6 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [WBFaceVerifyCustomerService sharedInstance];
+    
     self.view.backgroundColor=[UIColor whiteColor];
     [BasisTool toolMethods:@"TestA"];
     [RequestTool requestWithText:@"TestA"];
@@ -38,6 +41,9 @@
     table.delegate=self;
     table.dataSource=self;
     table.tableFooterView=[UIView new];
+    if (@available(iOS 15.0, *)) {
+        table.sectionHeaderTopPadding = 0;
+    }
     [self.view addSubview:table];
     
 }

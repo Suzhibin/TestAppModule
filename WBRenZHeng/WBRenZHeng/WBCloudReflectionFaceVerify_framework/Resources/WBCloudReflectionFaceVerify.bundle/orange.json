@@ -1,0 +1,48 @@
+{
+    "name" : "orange",
+
+    "statusBarStyle":   "dark",
+    "navbarTintColor":  "0x333333",
+    "baseNavBarColor":  "0x0",
+    "authNavBarColor":  "0x22252A",
+
+    "imageBgColor":     "0xffffff",
+    "faceNormalColor": "0x33FFFFFF",
+    "faceSatisfyColor": "0xFFB155",
+    "faceErrorColor": "0xFA5A5A",
+
+    "guideLabelColor":  "0x1D2232",
+    "guideLabelErrorColor" : "0xFA5A5A",
+    "customTipsColor":  "0x777A84",
+    "bottomTipsBgColor":  "0xFAFAFA",
+    "bottomTipsTextColor": "0x8E92AE",
+
+    "backButtonImage": "backbutton@light",
+    "authBackButtonImage": "backbutton@dark",
+    "authBodyImage": "wbcf_auth_face@orange",
+    "authCheckboxUnSelectImage":"wbcf_checkbox_unselect@orange",
+    "authCheckboxSelectImage":"wbcf_checkbox_select@orange",
+    "authCheckboxTipsColor": "0xA5A7AD", 
+    "authCheckboxLinkColor": "0x1D2232",
+    "authAgreeButtonNormalColor": "0x9CA1AE",
+    "authAgreeButtonHighlightColor": "0x1E2642",
+    "authAgreeTextNormalColor":"0x80FFFFFF",
+    "authAgreeTextHighlightColor":"0xFFFFFF",
+
+    "alertTitleColor":"0x000000",
+    "alertMessageColor":"0x000000",
+    "alertLeftBtnColor":"0x5065FF",
+    "alertRightBtnColor":"0x5065FF",
+    "alertBackgroundColor":"0xFFFFFF",
+    
+    "resultSuccessImage" : "upload_succeed@orange",
+    "resultFailureImage" : "upload_failed@orange",
+    "resultDetailTextColor" : "0x8E92AE",
+    "resultRetryButtonColor" : "0x1E2642",
+    "resultRetryTextColor" : "0xFFFFFF",
+    "resultCancelButtonColor" : "0x00000000",
+    "resultCancelTextColor": "0x313854",
+
+}
+
+

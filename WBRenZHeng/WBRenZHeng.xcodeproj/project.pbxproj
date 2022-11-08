@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CD71984C5AAA895271292EC /* libPods-WBRenZHeng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52EAAE75A4AE87DD7D78D1F8 /* libPods-WBRenZHeng.a */; };
+		9F17505526857BE1000AEE16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17505426857BE1000AEE16 /* AppDelegate.m */; };
+		9F17505826857BE1000AEE16 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17505726857BE1000AEE16 /* SceneDelegate.m */; };
+		9F17505B26857BE1000AEE16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17505A26857BE1000AEE16 /* ViewController.m */; };
+		9F17505E26857BE1000AEE16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F17505C26857BE1000AEE16 /* Main.storyboard */; };
+		9F17506026857BE4000AEE16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F17505F26857BE4000AEE16 /* Assets.xcassets */; };
+		9F17506326857BE4000AEE16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F17506126857BE4000AEE16 /* LaunchScreen.storyboard */; };
+		9F17506626857BE4000AEE16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17506526857BE4000AEE16 /* main.m */; };
+		9F17507D26857C44000AEE16 /* face-tracker-v001.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9F17507026857C44000AEE16 /* face-tracker-v001.bundle */; };
+		9F17507E26857C44000AEE16 /* WBCloudReflectionFaceVerify.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9F17507126857C44000AEE16 /* WBCloudReflectionFaceVerify.bundle */; };
+		9F17507F26857C44000AEE16 /* YTFaceDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17507326857C44000AEE16 /* YTFaceDetector.framework */; };
+		9F17508026857C44000AEE16 /* tnn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17507426857C44000AEE16 /* tnn.framework */; };
+		9F17508126857C44000AEE16 /* tiny_opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17507526857C44000AEE16 /* tiny_opencv2.framework */; };
+		9F17508226857C44000AEE16 /* WBCloudReflectionFaceVerify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17507626857C44000AEE16 /* WBCloudReflectionFaceVerify.framework */; };
+		9F17508326857C44000AEE16 /* YTCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17507726857C44000AEE16 /* YTCommon.framework */; };
+		9F17508426857C44000AEE16 /* YTFaceTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17507826857C44000AEE16 /* YTFaceTracker.framework */; };
+		9F17508526857C44000AEE16 /* YTPoseDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17507926857C44000AEE16 /* YTPoseDetector.framework */; };
+		9F17508626857C44000AEE16 /* YTFaceAlignmentTiny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17507A26857C44000AEE16 /* YTFaceAlignmentTiny.framework */; };
+		9F17508726857C44000AEE16 /* YTFaceLiveReflect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17507B26857C44000AEE16 /* YTFaceLiveReflect.framework */; };
+		9F17508826857C44000AEE16 /* WBCloudReflectionFaceVerify_framework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9F17507C26857C44000AEE16 /* WBCloudReflectionFaceVerify_framework.podspec */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52EAAE75A4AE87DD7D78D1F8 /* libPods-WBRenZHeng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WBRenZHeng.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		919F2B4AE2B73E3603AEB6F3 /* Pods-WBRenZHeng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBRenZHeng.release.xcconfig"; path = "Target Support Files/Pods-WBRenZHeng/Pods-WBRenZHeng.release.xcconfig"; sourceTree = "<group>"; };
+		9F17505026857BE1000AEE16 /* WBRenZHeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBRenZHeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F17505326857BE1000AEE16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F17505426857BE1000AEE16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F17505626857BE1000AEE16 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		9F17505726857BE1000AEE16 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		9F17505926857BE1000AEE16 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9F17505A26857BE1000AEE16 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9F17505D26857BE1000AEE16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F17505F26857BE4000AEE16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F17506226857BE4000AEE16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F17506426857BE4000AEE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F17506526857BE4000AEE16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F17507026857C44000AEE16 /* face-tracker-v001.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "face-tracker-v001.bundle"; sourceTree = "<group>"; };
+		9F17507126857C44000AEE16 /* WBCloudReflectionFaceVerify.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WBCloudReflectionFaceVerify.bundle; sourceTree = "<group>"; };
+		9F17507326857C44000AEE16 /* YTFaceDetector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YTFaceDetector.framework; sourceTree = "<group>"; };
+		9F17507426857C44000AEE16 /* tnn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = tnn.framework; sourceTree = "<group>"; };
+		9F17507526857C44000AEE16 /* tiny_opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = tiny_opencv2.framework; sourceTree = "<group>"; };
+		9F17507626857C44000AEE16 /* WBCloudReflectionFaceVerify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WBCloudReflectionFaceVerify.framework; sourceTree = "<group>"; };
+		9F17507726857C44000AEE16 /* YTCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YTCommon.framework; sourceTree = "<group>"; };
+		9F17507826857C44000AEE16 /* YTFaceTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YTFaceTracker.framework; sourceTree = "<group>"; };
+		9F17507926857C44000AEE16 /* YTPoseDetector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YTPoseDetector.framework; sourceTree = "<group>"; };
+		9F17507A26857C44000AEE16 /* YTFaceAlignmentTiny.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YTFaceAlignmentTiny.framework; sourceTree = "<group>"; };
+		9F17507B26857C44000AEE16 /* YTFaceLiveReflect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YTFaceLiveReflect.framework; sourceTree = "<group>"; };
+		9F17507C26857C44000AEE16 /* WBCloudReflectionFaceVerify_framework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WBCloudReflectionFaceVerify_framework.podspec; sourceTree = "<group>"; };
+		F0F3C6F843055D63D0FB5FE0 /* Pods-WBRenZHeng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBRenZHeng.debug.xcconfig"; path = "Target Support Files/Pods-WBRenZHeng/Pods-WBRenZHeng.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F17504D26857BE1000AEE16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F17508726857C44000AEE16 /* YTFaceLiveReflect.framework in Frameworks */,
+				9F17508626857C44000AEE16 /* YTFaceAlignmentTiny.framework in Frameworks */,
+				9F17508226857C44000AEE16 /* WBCloudReflectionFaceVerify.framework in Frameworks */,
+				9F17508126857C44000AEE16 /* tiny_opencv2.framework in Frameworks */,
+				9F17508526857C44000AEE16 /* YTPoseDetector.framework in Frameworks */,
+				9F17508326857C44000AEE16 /* YTCommon.framework in Frameworks */,
+				9F17508426857C44000AEE16 /* YTFaceTracker.framework in Frameworks */,
+				9F17507F26857C44000AEE16 /* YTFaceDetector.framework in Frameworks */,
+				9F17508026857C44000AEE16 /* tnn.framework in Frameworks */,
+				5CD71984C5AAA895271292EC /* libPods-WBRenZHeng.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5521F896F91E73FE16399E67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0F3C6F843055D63D0FB5FE0 /* Pods-WBRenZHeng.debug.xcconfig */,
+				919F2B4AE2B73E3603AEB6F3 /* Pods-WBRenZHeng.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		581472FDDF0221EEC939BE45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52EAAE75A4AE87DD7D78D1F8 /* libPods-WBRenZHeng.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F17504726857BE1000AEE16 = {
+			isa = PBXGroup;
+			children = (
+				9F17505226857BE1000AEE16 /* WBRenZHeng */,
+				9F17505126857BE1000AEE16 /* Products */,
+				5521F896F91E73FE16399E67 /* Pods */,
+				581472FDDF0221EEC939BE45 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F17505126857BE1000AEE16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F17505026857BE1000AEE16 /* WBRenZHeng.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F17505226857BE1000AEE16 /* WBRenZHeng */ = {
+			isa = PBXGroup;
+			children = (
+				9F17506E26857C44000AEE16 /* WBCloudReflectionFaceVerify_framework */,
+				9F17505326857BE1000AEE16 /* AppDelegate.h */,
+				9F17505426857BE1000AEE16 /* AppDelegate.m */,
+				9F17505626857BE1000AEE16 /* SceneDelegate.h */,
+				9F17505726857BE1000AEE16 /* SceneDelegate.m */,
+				9F17505926857BE1000AEE16 /* ViewController.h */,
+				9F17505A26857BE1000AEE16 /* ViewController.m */,
+				9F17505C26857BE1000AEE16 /* Main.storyboard */,
+				9F17505F26857BE4000AEE16 /* Assets.xcassets */,
+				9F17506126857BE4000AEE16 /* LaunchScreen.storyboard */,
+				9F17506426857BE4000AEE16 /* Info.plist */,
+				9F17506526857BE4000AEE16 /* main.m */,
+			);
+			path = WBRenZHeng;
+			sourceTree = "<group>";
+		};
+		9F17506E26857C44000AEE16 /* WBCloudReflectionFaceVerify_framework */ = {
+			isa = PBXGroup;
+			children = (
+				9F17506F26857C44000AEE16 /* Resources */,
+				9F17507226857C44000AEE16 /* Libs */,
+				9F17507C26857C44000AEE16 /* WBCloudReflectionFaceVerify_framework.podspec */,
+			);
+			path = WBCloudReflectionFaceVerify_framework;
+			sourceTree = "<group>";
+		};
+		9F17506F26857C44000AEE16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F17507026857C44000AEE16 /* face-tracker-v001.bundle */,
+				9F17507126857C44000AEE16 /* WBCloudReflectionFaceVerify.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F17507226857C44000AEE16 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				9F17507326857C44000AEE16 /* YTFaceDetector.framework */,
+				9F17507426857C44000AEE16 /* tnn.framework */,
+				9F17507526857C44000AEE16 /* tiny_opencv2.framework */,
+				9F17507626857C44000AEE16 /* WBCloudReflectionFaceVerify.framework */,
+				9F17507726857C44000AEE16 /* YTCommon.framework */,
+				9F17507826857C44000AEE16 /* YTFaceTracker.framework */,
+				9F17507926857C44000AEE16 /* YTPoseDetector.framework */,
+				9F17507A26857C44000AEE16 /* YTFaceAlignmentTiny.framework */,
+				9F17507B26857C44000AEE16 /* YTFaceLiveReflect.framework */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F17504F26857BE1000AEE16 /* WBRenZHeng */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F17506926857BE4000AEE16 /* Build configuration list for PBXNativeTarget "WBRenZHeng" */;
+			buildPhases = (
+				06B28B6A65B63D0C92B6521E /* [CP] Check Pods Manifest.lock */,
+				9F17504C26857BE1000AEE16 /* Sources */,
+				9F17504D26857BE1000AEE16 /* Frameworks */,
+				9F17504E26857BE1000AEE16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WBRenZHeng;
+			productName = WBRenZHeng;
+			productReference = 9F17505026857BE1000AEE16 /* WBRenZHeng.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F17504826857BE1000AEE16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					9F17504F26857BE1000AEE16 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 9F17504B26857BE1000AEE16 /* Build configuration list for PBXProject "WBRenZHeng" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F17504726857BE1000AEE16;
+			productRefGroup = 9F17505126857BE1000AEE16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F17504F26857BE1000AEE16 /* WBRenZHeng */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F17504E26857BE1000AEE16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F17507E26857C44000AEE16 /* WBCloudReflectionFaceVerify.bundle in Resources */,
+				9F17508826857C44000AEE16 /* WBCloudReflectionFaceVerify_framework.podspec in Resources */,
+				9F17507D26857C44000AEE16 /* face-tracker-v001.bundle in Resources */,
+				9F17506326857BE4000AEE16 /* LaunchScreen.storyboard in Resources */,
+				9F17506026857BE4000AEE16 /* Assets.xcassets in Resources */,
+				9F17505E26857BE1000AEE16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06B28B6A65B63D0C92B6521E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WBRenZHeng-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F17504C26857BE1000AEE16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F17505B26857BE1000AEE16 /* ViewController.m in Sources */,
+				9F17505526857BE1000AEE16 /* AppDelegate.m in Sources */,
+				9F17506626857BE4000AEE16 /* main.m in Sources */,
+				9F17505826857BE1000AEE16 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F17505C26857BE1000AEE16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F17505D26857BE1000AEE16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F17506126857BE4000AEE16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F17506226857BE4000AEE16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F17506726857BE4000AEE16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F17506826857BE4000AEE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F17506A26857BE4000AEE16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0F3C6F843055D63D0FB5FE0 /* Pods-WBRenZHeng.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6LU458855;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WBRenZHeng/WBCloudReflectionFaceVerify_framework/Libs",
+				);
+				INFOPLIST_FILE = WBRenZHeng/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.WBRenZHeng;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F17506B26857BE4000AEE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 919F2B4AE2B73E3603AEB6F3 /* Pods-WBRenZHeng.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6LU458855;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WBRenZHeng/WBCloudReflectionFaceVerify_framework/Libs",
+				);
+				INFOPLIST_FILE = WBRenZHeng/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.WBRenZHeng;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F17504B26857BE1000AEE16 /* Build configuration list for PBXProject "WBRenZHeng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F17506726857BE4000AEE16 /* Debug */,
+				9F17506826857BE4000AEE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F17506926857BE4000AEE16 /* Build configuration list for PBXNativeTarget "WBRenZHeng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F17506A26857BE4000AEE16 /* Debug */,
+				9F17506B26857BE4000AEE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F17504826857BE1000AEE16 /* Project object */;
+}

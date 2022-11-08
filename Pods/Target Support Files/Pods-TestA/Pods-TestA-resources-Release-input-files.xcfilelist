@@ -1,5 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-TestA/Pods-TestA-resources.sh
-${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-4e009c65/TestBasis.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-4e009c65/BasisTool.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-4e009c65/RequestTool.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-4e009c65/Utility.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-625c0ac3/TestBasis.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-625c0ac3/BasisTool.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-625c0ac3/RequestTool.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/TestAppModule-625c0ac3/Utility.bundle

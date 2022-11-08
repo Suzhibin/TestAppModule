@@ -17,7 +17,7 @@ pod "CTMediator"
 ---
 
 
-`CTMediator` helps you to devide your project into multi-project, and use `Target-Action` pattern to let subprojects to communicate with each other. *with no regist process!*
+`CTMediator` helps you to divide your project into multi-project, and use `Target-Action` pattern to let subprojects to communicate with each other. *with no regist process!*
 
 you can check demo for more details:
 
@@ -60,6 +60,8 @@ pod repo add PrivatePods https://github.com/ModulizationDemo/PrivatePods.git
 [iOS应用架构谈 组件化方案](http://casatwy.com/iOS-Modulization.html)
 
 [在现有工程中实施基于CTMediator的组件化方案](http://casatwy.com/modulization_in_action.html)
+
+[CTMediator的Swift应用](https://casatwy.com/CTMediator_in_Swift.html)
 
 ---
 

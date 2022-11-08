@@ -11,6 +11,7 @@ s.source       = { :git => 'https://github.com/Suzhibin/TestAppModule.git', :tag
 s.ios.deployment_target = '9.0'
 
 #基础组件
+#下面 可以使用 #bm.dependency 直接集成 ，也可以subspec
 s.subspec 'TestBasis' do |bm|
     
     # BasisTool
@@ -44,7 +45,6 @@ s.subspec 'TestBasis' do |bm|
         ]
     }
     ut.ios.framework  = 'UIKit'
-    ut.dependency 'MGJRouter'
     ut.dependency 'CTMediator'
     end
 
@@ -54,7 +54,7 @@ bm.resource_bundles = {
 'TestBasis/TestBasis/Classes/**/*.{storyboard,xcassets,xib,json}'
 ]
 }
-#bm.dependency 'MGJRouter'
+#下面 注释的 可以替换所有subspec
 #bm.dependency 'CTMediator'
 #
 #bm.ios.framework  = 'UIKit'
@@ -70,7 +70,7 @@ a.resource_bundles = {
 }
 a.prefix_header_file = 'TestA/TestA/Classes/TestA.pch'
 a.dependency 'TestAppModule/TestBasis'
-
+a.dependency 'TestAppModule/WBRenZHeng'
 a.ios.framework  = 'UIKit'
 end
 
@@ -98,7 +98,16 @@ c.resource_bundles = {
 }
 #c.prefix_header_file = 'TestC/TestC/Classes/TestC.pch'
 c.dependency 'TestAppModule/TestBasis'
+
 c.ios.framework  = 'UIKit'
 end
 
+#腾讯认证组件组件
+s.subspec 'WBRenZHeng' do |w|
+  w.ios.vendored_frameworks = 'WBRenZHeng/WBRenZHeng/WBCloudReflectionFaceVerify_framework/**/*.{framework}'
+  w.frameworks = ["UIKit", "AVFoundation", "MobileCoreServices", "CoreVideo", "Accelerate", "Security", "SystemConfiguration", "CoreMedia", "AudioToolbox", "CoreTelephony", "ImageIO","WebKit"]
+  w.libraries = ["c++","z"]
+  w.ios.resource ='WBCloudReflectionFaceVerify_framework/WBCloudReflectionFaceVerify_framework/WBCloudReflectionFaceVerify_framework/Resources/*.bundle'
+
+end
 end
